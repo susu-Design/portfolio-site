@@ -12,13 +12,37 @@ function abstractVisual(type, title) {
   </div>`;
 }
 
-function galleryMarkup(items = []) {
+function galleryMarkup(items = [], sectionNumber = '02') {
   if (!items.length) return '';
   return `<section class="gallery-section" aria-labelledby="process-images">
-    <div class="section-index">02 / Process evidence</div>
+    <div class="section-index">${sectionNumber} / Process evidence</div>
     <h2 id="process-images">Making the inquiry visible.</h2>
     <div class="gallery-grid">
       ${items.map(([src, caption], index) => `<figure class="gallery-item item-${index + 1}"><img src="${src}" alt="${caption}" loading="lazy"><figcaption><span>0${index + 1}</span>${caption}</figcaption></figure>`).join('')}
+    </div>
+  </section>`;
+}
+
+function thesisMediaMarkup(item) {
+  if (!item.thesisBook || !item.film) return '';
+  return `<section class="thesis-media-section" aria-labelledby="thesis-media-title">
+    <div class="section-index">02 / Thesis archive</div>
+    <div class="thesis-media-heading">
+      <h2 id="thesis-media-title">Read the book.<br>Watch the film.</h2>
+      <p>The written thesis and project film bring the research, experiments, and final proposition together in their original formats.</p>
+    </div>
+    <div class="thesis-media-grid">
+      <a class="thesis-book" href="${item.thesisBook.file}" target="_blank" rel="noreferrer">
+        <figure><img src="${item.thesisBook.cover}" alt="Cover of the Bee Line MFA thesis book"></figure>
+        <div><span>Thesis book · ${item.thesisBook.pages} pages · PDF</span><strong>Open the complete book ↗</strong></div>
+      </a>
+      <div class="thesis-film">
+        <video controls playsinline preload="metadata" aria-label="Who Is Our Navigation thesis film">
+          <source src="${item.film.file}" type="video/mp4">
+          Your browser does not support embedded video.
+        </video>
+        <div><span>Project film · ${item.film.duration} · HD</span><strong>Who Is Our Navigation?</strong></div>
+      </div>
     </div>
   </section>`;
 }
@@ -70,7 +94,7 @@ if (!project) {
     main.innerHTML = notionArchiveMarkup(project, nextProject);
   } else {
   const heroVisual = project.cover
-    ? `<figure class="hero-media"><img src="${project.cover}" alt="Cover image for ${project.title}"></figure>`
+    ? `<figure class="hero-media${project.coverFit === 'contain' ? ' media-contain' : ''}"><img src="${project.cover}" alt="Cover image for ${project.title}"></figure>`
     : abstractVisual(project.visual, project.title);
 
   main.innerHTML = `
@@ -107,7 +131,9 @@ if (!project) {
         </div>
       </section>
 
-      ${galleryMarkup(project.gallery)}
+      ${thesisMediaMarkup(project)}
+
+      ${galleryMarkup(project.gallery, project.thesisBook ? '03' : '02')}
 
       <section class="result-section">
         <div><span>Outcome</span><p>${project.outcome}</p></div>

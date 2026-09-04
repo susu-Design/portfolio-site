@@ -15,8 +15,18 @@ window.PROJECTS = [
     contribution: "I designed the research framework, conducted field inquiry, fabricated the sensory prototypes, facilitated participant encounters, and synthesized observations through posthuman and more-than-human design perspectives.",
     outcome: "The prototypes made normally backgrounded environmental cues tangible. Participants relied on bodily memory, negotiated uncertainty, and discussed how navigation technologies distribute agency rather than simply deliver directions.",
     reflection: "The work argues that navigation is never neutral: every interface prioritizes particular worlds and ways of knowing. Design can expose those values and create room for human and non-human actors to be perceived differently.",
-    cover: "assets/navigation-map.jpg",
+    cover: "assets/projects/navigation/chang-su-beeline-cover.jpg",
+    coverFit: "contain",
     theme: "acid",
+    thesisBook: {
+      file: "assets/projects/navigation/chang-su-beeline-thesis.pdf",
+      cover: "assets/projects/navigation/chang-su-beeline-cover.jpg",
+      pages: 35
+    },
+    film: {
+      file: "assets/projects/navigation/who-is-our-navigation-film.m4v",
+      duration: "1:28"
+    },
     gallery: [
       ["assets/projects/navigation/taste.jpg", "A sensory experiment turns air and location into something that can be tasted."],
       ["assets/projects/navigation/vibration-slippers.jpg", "Vibration slippers prototype directional information through the feet."],
