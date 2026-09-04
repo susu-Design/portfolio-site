@@ -93,6 +93,18 @@ h2 { max-width: 760px; margin: 0; font-size: clamp(2.8rem, 5vw, 6rem); line-heig
 .gallery-item img { max-height: 76vh; background: #282824; object-fit: contain; }
 .gallery-item figcaption { display: grid; grid-template-columns: 50px 1fr; gap: 15px; margin-top: 13px; color: #aaa89f; font-size: .72rem; line-height: 1.5; text-transform: uppercase; letter-spacing: .055em; }
 
+.archive-intro { padding: clamp(90px, 12vw, 180px) var(--pad) clamp(70px, 9vw, 130px); border-bottom: 1px solid var(--line); }
+.archive-intro h1 { max-width: 1050px; }
+.archive-intro-copy { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(220px, .6fr); gap: 50px; align-items: end; margin-top: clamp(55px, 8vw, 110px); }
+.archive-intro-copy > p { max-width: 800px; margin: 0; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(1.25rem, 2vw, 2rem); line-height: 1.42; }
+.archive-meta { display: flex; justify-content: flex-end; gap: 28px; color: var(--muted); font-size: .7rem; text-transform: uppercase; letter-spacing: .1em; }
+.archive-stream { padding: clamp(35px, 5vw, 80px) var(--pad) clamp(90px, 12vw, 180px); background: #fff; }
+.archive-group { max-width: 1680px; margin: 0 auto; }
+.archive-group + .archive-group { margin-top: clamp(90px, 12vw, 180px); padding-top: clamp(45px, 6vw, 90px); border-top: 1px solid #deded8; }
+.archive-image { margin: 0; }
+.archive-image + .archive-image { margin-top: clamp(18px, 2.6vw, 42px); }
+.archive-image img { height: auto; background: #f5f5f2; }
+
 .result-section { display: grid; grid-template-columns: 1fr 1fr; }
 .result-section > div { min-height: 520px; padding: clamp(55px, 7vw, 110px) var(--pad); }
 .result-section p { max-width: 720px; margin: 35px 0 0; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(1.5rem, 2.4vw, 2.65rem); line-height: 1.28; }
@@ -122,6 +134,8 @@ footer p { margin: 0; }
   .gallery-item, .gallery-item:nth-child(even) { grid-column: span 12; }
   .result-section { grid-template-columns: 1fr; }
   .result-section > div { min-height: auto; }
+  .archive-intro-copy { grid-template-columns: 1fr; }
+  .archive-meta { justify-content: flex-start; }
 }
 
 @media (max-width: 620px) {
@@ -135,6 +149,8 @@ footer p { margin: 0; }
   .case-facts > div + div { padding-left: 0; }
   .confidential-note { grid-template-columns: 1fr; }
   .gallery-section { padding-top: 85px; }
+  .archive-meta { flex-direction: column; gap: 10px; }
+  .archive-stream { padding-right: 0; padding-left: 0; }
   .source-section, footer { flex-direction: column; }
 }
 

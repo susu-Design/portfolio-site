@@ -154,27 +154,16 @@ window.PROJECTS = [
   },
   {
     slug: "assemblies",
-    title: "Industrial Design Assemblies",
-    kicker: "Selected objects · Form and prototyping",
+    title: "Industrial Design Assembles",
+    kicker: "Industrial design · Selected archive",
     category: "industry",
     year: "Selected archive",
-    status: "Concept collection",
     role: "Industrial designer",
-    disciplines: ["Form development", "Prototyping", "CMF"],
-    summary: "A visual archive of product concepts developed through sketching, form iteration, physical prototyping, engineering constraints, and presentation.",
-    question: "How can a product communicate purpose and character before a user reads an instruction or touches a control?",
-    challenge: "Across diverse briefs, the recurring task was to turn an abstract behavior into an object with legible use, a coherent silhouette, and credible construction.",
-    approach: "Projects move iteratively between sketch, digital model, mock-up, detail resolution, CMF, and contextual visualization. The archive emphasizes comparison and formal judgment rather than one linear case-study narrative.",
-    contribution: "I led the form development and visualization of the selected concepts, using models and context studies to test proportion, interface placement, and product character.",
-    outcome: "The collection demonstrates range across domestic, workplace, and speculative objects while retaining a consistent attention to interaction and assembly.",
-    reflection: "A strong industrial-design portfolio should reveal decisions, not only finished surfaces. This archive is therefore presented as a family of evolving propositions.",
-    cover: "assets/balance-clock.png",
+    summary: "A continuous visual archive of industrial-design projects, presented in the same sequence as the original Notion portfolio.",
+    cover: "assets/projects/assemblies/notion/assembly-01.jpg",
     theme: "blue",
-    gallery: [
-      ["assets/projects/assemblies/balance-clock.png", "Balance Clock: time is expressed through a physical relationship between two volumes."],
-      ["assets/projects/assemblies/bird-scanner.png", "Bird Scanner explores ambient sensing as a companion-like desktop object."],
-      ["assets/projects/assemblies/noise-reflection.png", "Noise Reflection visualizes an environmental condition through product form."]
-    ],
+    layout: "notion-archive",
+    archiveGroups: [[1, 6], [7, 11], [12, 17], [18, 23], [24, 27], [28, 30], [31, 35], [36, 38], [39, 43]],
     source: "https://bouncy-tendency-672.notion.site/Industrial-Design-Assembles-815bee613f6e46a6a7672c50ccf7e422?pvs=25"
   },
   {

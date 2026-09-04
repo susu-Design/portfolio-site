@@ -23,12 +23,52 @@ function galleryMarkup(items = []) {
   </section>`;
 }
 
+function notionArchiveMarkup(item, nextItem) {
+  const groups = item.archiveGroups || [];
+  const imageMarkup = groups.map(([start, end], groupIndex) => {
+    const images = Array.from({ length: end - start + 1 }, (_, index) => start + index);
+    return `<div class="archive-group" data-group="${groupIndex + 1}">
+      ${images.map((imageNumber) => {
+        const number = String(imageNumber).padStart(2, '0');
+        return `<figure class="archive-image"><img src="assets/projects/assemblies/notion/assembly-${number}.jpg" alt="Industrial design portfolio spread ${imageNumber}" loading="lazy"></figure>`;
+      }).join('')}
+    </div>`;
+  }).join('');
+
+  return `<article class="notion-archive">
+    <section class="archive-intro">
+      <p class="eyebrow">${item.kicker}</p>
+      <h1>${item.title}</h1>
+      <div class="archive-intro-copy">
+        <p>${item.summary}</p>
+        <div class="archive-meta"><span>${item.role}</span><span>${item.year}</span></div>
+      </div>
+    </section>
+
+    <section class="archive-stream" aria-label="Industrial design portfolio archive">
+      ${imageMarkup}
+    </section>
+
+    <section class="source-section">
+      <p>Images and sequence follow Chang Su’s Notion portfolio archive.</p>
+      <a href="${item.source}" target="_blank" rel="noreferrer">View original Notion archive ↗</a>
+    </section>
+
+    <a class="next-project" href="project.html?project=${nextItem.slug}">
+      <span>Next project</span><strong>${nextItem.title}</strong><i>→</i>
+    </a>
+  </article>`;
+}
+
 if (!project) {
   main.innerHTML = '<section class="not-found"><h1>Project not found.</h1><a href="index.html#work">Return to all projects</a></section>';
 } else {
   document.title = `${project.title} — Chang Su`;
   document.documentElement.dataset.theme = project.theme;
   const nextProject = projects[(projectIndex + 1) % projects.length];
+  if (project.layout === 'notion-archive') {
+    main.innerHTML = notionArchiveMarkup(project, nextProject);
+  } else {
   const heroVisual = project.cover
     ? `<figure class="hero-media"><img src="${project.cover}" alt="Cover image for ${project.title}"></figure>`
     : abstractVisual(project.visual, project.title);
@@ -83,6 +123,7 @@ if (!project) {
         <span>Next project</span><strong>${nextProject.title}</strong><i>→</i>
       </a>
     </article>`;
+  }
 }
 
 document.querySelector('#year').textContent = new Date().getFullYear();
