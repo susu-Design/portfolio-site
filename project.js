@@ -72,18 +72,13 @@ function speculativeFoodMarkup(item, nextItem) {
             <p>${chapter.designOutput.label}</p>
             <div><h3>${chapter.designOutput.title}</h3><span>${chapter.designOutput.copy}</span></div>
           </header>
-          <figure class="food-output-hero">
-            <img src="${chapter.designOutput.hero.image}" alt="${chapter.designOutput.hero.alt}" loading="lazy">
-            <figcaption>${chapter.designOutput.hero.caption}</figcaption>
+          <figure class="food-output-board">
+            <img src="${chapter.designOutput.image}" alt="${chapter.designOutput.alt}" loading="lazy">
+            <figcaption>${chapter.designOutput.caption}</figcaption>
           </figure>
-          <div class="food-output-method">
-            ${chapter.designOutput.steps.map((step, index) => `<article><span>0${index + 1}</span><h4>${step.title}</h4><p>${step.copy}</p></article>`).join('')}
+          <div class="food-output-explanation">
+            ${chapter.designOutput.explanation.map((entry) => `<article><span>${entry.label}</span><h4>${entry.title}</h4><p>${entry.copy}</p></article>`).join('')}
           </div>
-          <figure class="food-output-detail">
-            <img src="${chapter.designOutput.detail.image}" alt="${chapter.designOutput.detail.alt}" loading="lazy">
-            <figcaption>${chapter.designOutput.detail.caption}</figcaption>
-          </figure>
-          <p class="food-output-note">${chapter.designOutput.note}</p>
         </section>` : '';
       return `<section class="food-chapter food-research" id="${chapter.id}">
         <header class="food-chapter-heading">
