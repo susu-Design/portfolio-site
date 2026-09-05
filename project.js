@@ -50,6 +50,35 @@ function thesisMediaMarkup(item) {
 function speculativeFoodMarkup(item, nextItem) {
   const chapters = item.chapters || [];
   const chapterMarkup = chapters.map((chapter) => {
+    if (chapter.type === 'research') {
+      const comparison = (chapter.comparison || []).map((entry) => `
+        <figure class="food-research-process">
+          <img src="${entry.image}" alt="${entry.alt}" loading="lazy">
+          <figcaption><span>${entry.label}</span><p>${entry.caption}</p></figcaption>
+        </figure>`).join('');
+      const findings = (chapter.findings || []).map((entry) => `
+        <article class="food-research-finding${entry.wide ? ' is-wide' : ''}">
+          <figure><img src="${entry.image}" alt="${entry.alt}" loading="lazy"></figure>
+          <div>
+            <span>${entry.number} / ${entry.label}</span>
+            <strong>${entry.stat}</strong>
+            <h3>${entry.title}</h3>
+            <p>${entry.caption}</p>
+          </div>
+        </article>`).join('');
+      return `<section class="food-chapter food-research" id="${chapter.id}">
+        <header class="food-chapter-heading">
+          <p>${chapter.label}</p>
+          <div><h2>${chapter.title}</h2><span>${chapter.copy}</span></div>
+        </header>
+        <div class="food-research-comparison">${comparison}</div>
+        <div class="food-research-intro">
+          <p>${chapter.findingsLabel}</p>
+          <h3>${chapter.findingsTitle}</h3>
+        </div>
+        <div class="food-research-findings">${findings}</div>
+      </section>`;
+    }
     const images = chapter.images || [];
     const gallery = images.map((src, index) => {
       const isWide = index % 3 === 0 || (index === images.length - 1 && images.length % 3 === 2);

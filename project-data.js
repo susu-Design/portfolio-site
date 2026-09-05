@@ -109,30 +109,67 @@ window.PROJECTS = [
     layout: "speculative-food",
     chapters: [
       {
-        id: "what",
+        id: "research",
+        type: "research",
         navLabel: "RESEARCH",
-        label: "PART 01 · RESEARCH",
-        title: "One food, two systems of production.",
-        copy: "Comparing traditional craft with the automated factory line reveals what industrial efficiency changes—not only scale and speed, but also flavor, material value, and the relationship between people and food.",
-        imageAlt: "Traditional and industrial tofu production processes",
-        images: [
-          "assets/projects/eating-future/process/what-process-combined-v1.png",
-          "assets/projects/eating-future/process/what-industrialization-combined-v1.png"
-        ]
-      },
-      {
-        id: "why",
-        navLabel: "CHALLENGE",
-        label: "DESIGN CHALLENGE",
-        title: "Efficiency can turn aroma into waste.",
-        copy: "Okara is reused as food in many Eastern contexts, yet industrial systems often discard it because recovery is costly. The same by-product carries the aroma associated with traditionally made tofu.",
-        imageAlt: "Food-system and sustainability research board",
-        images: [
-          "assets/projects/eating-future/process/why-2.jpg",
-          "assets/projects/eating-future/process/why-3.jpg",
-          "assets/projects/eating-future/process/why-4.jpg",
-          "assets/projects/eating-future/process/why-5.jpg",
-          "assets/projects/eating-future/process/why-7.jpg"
+        label: "RESEARCH",
+        title: "From a block of tofu to a system.",
+        copy: "The research followed tofu beyond the finished product—back to soybean cultivation, through two forms of production, and onward into water use, refrigeration, packaging, and discarded okara.",
+        comparison: [
+          {
+            label: "01 / TRADITIONAL PRODUCTION",
+            image: "assets/projects/eating-future/process/what-process-combined-v1.png",
+            alt: "Traditional tofu production from soaking beans to pressing curds",
+            caption: "Open vessels and repeated handwork keep ingredients, aroma, and by-products visible throughout the process."
+          },
+          {
+            label: "02 / INDUSTRIAL PRODUCTION",
+            image: "assets/projects/eating-future/process/what-industrialization-combined-v1.png",
+            alt: "Automated industrial tofu production line",
+            caption: "Enclosed pipes, mechanized forming, and continuous transport turn the same food into a standardized, scalable product."
+          }
+        ],
+        findingsLabel: "TOFU + SUSTAINABILITY",
+        findingsTitle: "Four points where efficiency creates an environmental or cultural trade-off.",
+        findings: [
+          {
+            number: "01",
+            label: "SUPPLY CHAIN",
+            stat: "GLOBAL",
+            title: "The impact begins before tofu is made.",
+            caption: "Soybean cultivation and long-distance trade connect tofu to land use, agricultural practices, and a global commodity network.",
+            image: "assets/projects/eating-future/process/research-soy-trade-map.jpg",
+            alt: "Map of international soybean trade routes",
+            wide: true
+          },
+          {
+            number: "02",
+            label: "PROCESSING",
+            stat: "≈110 L",
+            title: "Water is part of the product.",
+            caption: "The initial desk research estimated that producing 100 g of tofu can require roughly 110 litres of water across its processing stages.",
+            image: "assets/projects/eating-future/process/research-tofu-block.jpg",
+            alt: "A block of tofu"
+          },
+          {
+            number: "03",
+            label: "DISTRIBUTION",
+            stat: "7 DAYS",
+            title: "Shelf life creates another material system.",
+            caption: "A short refrigerated shelf life makes waterproof plastic packaging and cold-chain distribution part of tofu's environmental footprint.",
+            image: "assets/projects/eating-future/process/research-retail-packaging.jpg",
+            alt: "Packaged tofu displayed in refrigerated retail shelves"
+          },
+          {
+            number: "04",
+            label: "BY-PRODUCT",
+            stat: "≈30 T / DAY",
+            title: "Waste is defined by culture and infrastructure.",
+            caption: "Okara remains edible and is reused in many food traditions, yet the research found that almost 30 tonnes can be discarded daily in Singapore when recovery is economically inconvenient.",
+            image: "assets/projects/eating-future/process/research-okara-food.jpg",
+            alt: "Okara reused as prepared food",
+            wide: true
+          }
         ]
       },
       {
