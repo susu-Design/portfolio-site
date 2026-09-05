@@ -113,10 +113,9 @@ window.PROJECTS = [
         label: "WHAT?",
         title: "Tofu is a process, not a block.",
         copy: "Following the bean through soaking, grinding, filtering, and pressing revealed the material system hidden behind an ordinary food.",
-        imageAlt: "Tofu production research board",
+        imageAlt: "Tofu production process from soaking soybeans to pressing curds",
         images: [
-          "assets/projects/eating-future/process/what-4.jpg",
-          "assets/projects/eating-future/process/what-5.jpg",
+          "assets/projects/eating-future/process/what-process-combined-v1.png",
           "assets/projects/eating-future/process/what-7.jpg"
         ]
       },
