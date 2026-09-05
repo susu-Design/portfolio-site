@@ -47,6 +47,52 @@ function thesisMediaMarkup(item) {
   </section>`;
 }
 
+function speculativeFoodMarkup(item, nextItem) {
+  const chapters = item.chapters || [];
+  const chapterMarkup = chapters.map((chapter) => {
+    const images = chapter.images || [];
+    const gallery = images.map((src, index) => {
+      const isWide = index % 3 === 0 || (index === images.length - 1 && images.length % 3 === 2);
+      return `<figure class="food-process-image${isWide ? ' is-wide' : ''}"><img src="${src}" alt="${chapter.imageAlt} ${index + 1}" loading="lazy"></figure>`;
+    }).join('');
+    return `<section class="food-chapter chapter-${chapter.id}" id="${chapter.id}">
+      <header class="food-chapter-heading">
+        <p>${chapter.label}</p>
+        <div><h2>${chapter.title}</h2><span>${chapter.copy}</span></div>
+      </header>
+      <div class="food-process-grid">${gallery}</div>
+    </section>`;
+  }).join('');
+
+  return `<article class="speculative-food">
+    <section class="food-hero">
+      <img src="${item.cover}" alt="Tofu-making process used in Eating the Future">
+      <div class="food-hero-shade"></div>
+      <div class="food-hero-copy">
+        <p>${item.kicker}</p>
+        <h1>${item.title}</h1>
+        <span>${item.summary}</span>
+      </div>
+      <div class="food-hero-meta"><span>${item.role}</span><span>${item.year}</span></div>
+    </section>
+
+    <nav class="food-nav" aria-label="Eating the Future chapters">
+      ${chapters.map((chapter) => `<a href="#${chapter.id}">${chapter.label}</a>`).join('')}
+    </nav>
+
+    ${chapterMarkup}
+
+    <section class="source-section food-source">
+      <p>Process material selected from Chang Su’s CCA project archive.</p>
+      <a href="${item.source}" target="_blank" rel="noreferrer">View original Notion archive ↗</a>
+    </section>
+
+    <a class="next-project" href="project.html?project=${nextItem.slug}">
+      <span>Next project</span><strong>${nextItem.title}</strong><i>→</i>
+    </a>
+  </article>`;
+}
+
 function notionArchiveMarkup(item, nextItem) {
   const groups = item.archiveGroups || [];
   const imageMarkup = groups.map(([start, end], groupIndex) => {
@@ -90,7 +136,9 @@ if (!project) {
   document.title = `${project.title} — Chang Su`;
   document.documentElement.dataset.theme = project.theme;
   const nextProject = projects[(projectIndex + 1) % projects.length];
-  if (project.layout === 'notion-archive') {
+  if (project.layout === 'speculative-food') {
+    main.innerHTML = speculativeFoodMarkup(project, nextProject);
+  } else if (project.layout === 'notion-archive') {
     main.innerHTML = notionArchiveMarkup(project, nextProject);
   } else {
   const heroVisual = project.cover

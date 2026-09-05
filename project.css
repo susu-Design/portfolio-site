@@ -108,6 +108,36 @@ h2 { max-width: 760px; margin: 0; font-size: clamp(2.8rem, 5vw, 6rem); line-heig
 .thesis-book span, .thesis-film span { color: var(--muted); font-size: .67rem; text-transform: uppercase; letter-spacing: .1em; }
 .thesis-book strong, .thesis-film strong { font-size: clamp(1.05rem, 1.4vw, 1.35rem); font-weight: 500; }
 
+.speculative-food { --food-pink: #ff8fa8; --food-green: #b5e449; --food-cream: #f5f0df; background: var(--food-cream); }
+.food-hero { position: relative; min-height: calc(100vh - 72px); overflow: hidden; background: #111; color: #fff; }
+.food-hero > img { position: absolute; inset: 0; height: 100%; object-fit: cover; }
+.food-hero-shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.12), rgba(0,0,0,.72)); }
+.food-hero-copy { position: absolute; z-index: 1; right: var(--pad); bottom: clamp(80px, 10vw, 150px); left: var(--pad); }
+.food-hero-copy > p, .food-hero-meta { font-size: .69rem; text-transform: uppercase; letter-spacing: .12em; }
+.food-hero-copy > p { margin: 0 0 24px; }
+.food-hero-copy h1 { max-width: 1150px; font-size: clamp(4.3rem, 10vw, 11rem); line-height: .78; color: #fff; }
+.food-hero-copy > span { display: block; max-width: 640px; margin-top: 34px; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(1.1rem, 1.6vw, 1.65rem); line-height: 1.4; }
+.food-hero-meta { position: absolute; z-index: 1; top: 30px; right: var(--pad); display: flex; gap: 28px; }
+.food-nav { position: sticky; top: 72px; z-index: 8; display: flex; justify-content: center; gap: clamp(20px, 4vw, 65px); padding: 21px var(--pad); border-bottom: 1px solid rgba(21,21,18,.25); background: rgba(245,240,223,.94); backdrop-filter: blur(12px); }
+.food-nav a { font-size: .7rem; font-weight: 700; letter-spacing: .09em; }
+.food-nav a:hover { color: #e72f59; }
+.food-chapter { padding: clamp(95px, 12vw, 180px) var(--pad); border-bottom: 1px solid rgba(21,21,18,.22); }
+.food-chapter-heading { display: grid; grid-template-columns: minmax(150px, .45fr) minmax(0, 1.55fr); gap: clamp(35px, 7vw, 120px); align-items: start; margin-bottom: clamp(65px, 9vw, 130px); }
+.food-chapter-heading > p { margin: 0; color: #e72f59; font-size: clamp(2.1rem, 4vw, 5.2rem); line-height: .9; letter-spacing: -.06em; font-weight: 800; }
+.food-chapter-heading h2 { max-width: 1050px; font-size: clamp(3.5rem, 7vw, 8.7rem); line-height: .84; }
+.food-chapter-heading span { display: block; max-width: 600px; margin-top: 34px; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(1.1rem, 1.55vw, 1.55rem); line-height: 1.45; }
+.food-process-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: clamp(22px, 3vw, 48px); }
+.food-process-image { grid-column: span 6; margin: 0; overflow: hidden; background: #fff; }
+.food-process-image.is-wide { grid-column: span 12; }
+.food-process-image img { height: 100%; object-fit: contain; }
+.chapter-why { background: var(--food-green); }
+.chapter-how { background: #fff; }
+.chapter-what-if { background: #181816; color: var(--food-cream); }
+.chapter-what-if .food-chapter-heading > p { color: var(--food-pink); }
+.chapter-paradox { background: var(--food-pink); }
+.chapter-paradox .food-chapter-heading > p { color: var(--ink); }
+.food-source { background: var(--food-cream); }
+
 .archive-intro { padding: clamp(90px, 12vw, 180px) var(--pad) clamp(70px, 9vw, 130px); border-bottom: 1px solid var(--line); }
 .archive-intro h1 { max-width: 1050px; }
 .archive-intro-copy { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(220px, .6fr); gap: 50px; align-items: end; margin-top: clamp(55px, 8vw, 110px); }
@@ -151,6 +181,7 @@ footer p { margin: 0; }
   .result-section > div { min-height: auto; }
   .thesis-media-heading, .thesis-media-grid { grid-template-columns: 1fr; }
   .thesis-book { max-width: 580px; }
+  .food-chapter-heading { grid-template-columns: 1fr; }
   .archive-intro-copy { grid-template-columns: 1fr; }
   .archive-meta { justify-content: flex-start; }
 }
@@ -168,6 +199,11 @@ footer p { margin: 0; }
   .gallery-section { padding-top: 85px; }
   .archive-meta { flex-direction: column; gap: 10px; }
   .archive-stream { padding-right: 0; padding-left: 0; }
+  .food-hero-copy h1 { font-size: clamp(3.8rem, 18vw, 6.2rem); }
+  .food-hero-meta { left: var(--pad); right: auto; }
+  .food-nav { justify-content: flex-start; overflow-x: auto; }
+  .food-nav a { flex: 0 0 auto; }
+  .food-process-image, .food-process-image.is-wide { grid-column: span 12; }
   .source-section, footer { flex-direction: column; }
 }
 

@@ -91,13 +91,13 @@ window.PROJECTS = [
   {
     slug: "eating-future",
     title: "Eating the Future",
-    kicker: "Design fiction · Food systems",
+    kicker: "Speculative Design · Food systems",
     category: "research",
     year: "2021",
     status: "Academic research",
     role: "Design researcher",
     disciplines: ["Design fiction", "Food design", "Sustainability"],
-    summary: "Food objects and fictional narratives explore cultural habits, tofu by-products, and how future stories can change what food is allowed to mean.",
+    summary: "A speculative design inquiry using tofu, okara, material experiments, and fictional dining rituals to question how food becomes culture, waste, and technology.",
     question: "What happens when food is treated not only as nutrition, but as a cultural actor, waste stream, prop, and participant in a fictional world?",
     challenge: "Okara, the nutrient-rich residue of tofu production, is valued differently across cultures and is frequently discarded. The project used this tension as a point of departure for questioning familiar categories of food and waste.",
     approach: "Historical research, cultural probes, dialogue, character interaction, and fictional film contexts were combined with hands-on food experiments. Physical outcomes became props for discussing alternative habits rather than proposals for one predicted future.",
@@ -106,10 +106,87 @@ window.PROJECTS = [
     reflection: "Food design can create debate by making an unfamiliar value system edible, visible, and discussable. The most useful outcome was not a new recipe, but a new frame for seeing waste.",
     cover: "assets/eating-future.png",
     theme: "soy",
-    gallery: [
-      ["assets/projects/eating-future/okara.png", "Mapping the tofu process and the by-product that became the project’s point of inquiry."],
-      ["assets/projects/eating-future/tofu-label.jpg", "Packaging and labeling explore how language changes perceived food value."],
-      ["assets/projects/eating-future/fiction-object.jpg", "A speculative food object placed within a cinematic future scenario."]
+    layout: "speculative-food",
+    chapters: [
+      {
+        id: "what",
+        label: "WHAT?",
+        title: "Tofu is a process, not a block.",
+        copy: "Following the bean through soaking, grinding, filtering, and pressing revealed the material system hidden behind an ordinary food.",
+        imageAlt: "Tofu production research board",
+        images: [
+          "assets/projects/eating-future/process/what-4.jpg",
+          "assets/projects/eating-future/process/what-5.jpg",
+          "assets/projects/eating-future/process/what-7.jpg"
+        ]
+      },
+      {
+        id: "why",
+        label: "WHY?",
+        title: "Waste is a cultural decision.",
+        copy: "Soybean flows, water, packaging, and okara show that value is assigned by systems—not contained in the material itself.",
+        imageAlt: "Food-system and sustainability research board",
+        images: [
+          "assets/projects/eating-future/process/why-2.jpg",
+          "assets/projects/eating-future/process/why-3.jpg",
+          "assets/projects/eating-future/process/why-4.jpg",
+          "assets/projects/eating-future/process/why-5.jpg",
+          "assets/projects/eating-future/process/why-7.jpg"
+        ]
+      },
+      {
+        id: "how",
+        label: "HOW?",
+        title: "Turn residue into a signal.",
+        copy: "Okara became scent, flame, form, and a dissemination machine—an experiment for making an ignored by-product perceptible.",
+        imageAlt: "Okara material experiment and concept-development board",
+        images: [
+          "assets/projects/eating-future/process/how-5.jpg",
+          "assets/projects/eating-future/process/how-9.jpg",
+          "assets/projects/eating-future/process/how-10.jpg",
+          "assets/projects/eating-future/process/how-11.jpg",
+          "assets/projects/eating-future/process/how-12.jpg",
+          "assets/projects/eating-future/process/how-13.jpg",
+          "assets/projects/eating-future/process/how-14.jpg",
+          "assets/projects/eating-future/process/how-15.jpg"
+        ]
+      },
+      {
+        id: "what-if",
+        label: "WHAT IF?",
+        title: "Eating exceeds the human body.",
+        copy: "Film analysis and speculative sketching reframed dining for human, robot, and alien bodies with different rituals and needs.",
+        imageAlt: "Speculative dining research, sketch, and prototype board",
+        images: [
+          "assets/projects/eating-future/process/what-if-8.jpg",
+          "assets/projects/eating-future/process/what-if-10.jpg",
+          "assets/projects/eating-future/process/what-if-11.jpg",
+          "assets/projects/eating-future/process/what-if-12.jpg",
+          "assets/projects/eating-future/process/what-if-13.jpg",
+          "assets/projects/eating-future/process/what-if-15.jpg",
+          "assets/projects/eating-future/process/what-if-17.jpg",
+          "assets/projects/eating-future/process/what-if-19.jpg",
+          "assets/projects/eating-future/process/what-if-20.jpg",
+          "assets/projects/eating-future/process/what-if-21.jpg",
+          "assets/projects/eating-future/process/what-if-22.jpg",
+          "assets/projects/eating-future/process/what-if-23.jpg"
+        ]
+      },
+      {
+        id: "paradox",
+        label: "PARADOX",
+        title: "A proposal that refuses to solve.",
+        copy: "The artifacts stage unfamiliar rituals so that assumptions about food, waste, and whose body matters can remain visible—and debatable.",
+        imageAlt: "Final speculative food artifact and scenario",
+        images: [
+          "assets/projects/eating-future/process/paradox-machine-16.jpg",
+          "assets/projects/eating-future/process/paradox-machine-18.jpg",
+          "assets/projects/eating-future/process/paradox-machine-19.jpg",
+          "assets/projects/eating-future/process/paradox-alien-24.jpg",
+          "assets/projects/eating-future/process/paradox-alien-25.jpg",
+          "assets/projects/eating-future/process/paradox-alien-26.jpg"
+        ]
+      }
     ],
     source: "https://bouncy-tendency-672.notion.site/Eating-the-Future-a8c85e61435a45da9b3c92155ffc356c?pvs=25"
   },
