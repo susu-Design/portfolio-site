@@ -170,7 +170,37 @@ window.PROJECTS = [
             alt: "Okara reused as prepared food",
             wide: true
           }
-        ]
+        ],
+        designOutput: {
+          label: "RESEARCH THROUGH DESIGN · PACKAGING PROTOTYPE",
+          title: "Making tofu's footprint visible at the moment of choice.",
+          copy: "Packaging is where an industrial food system meets the consumer, yet it usually presents only the finished product. I used the package label as a research interface: a place to return evidence about water use, carbon impact, shelf life, and okara to the act of buying and eating tofu.",
+          hero: {
+            image: "assets/projects/eating-future/process/research-packaging-label.jpg",
+            alt: "Sustainable tofu packaging label showing water use, okara, and shelf life",
+            caption: "Front-label study: the soybean-to-tofu sequence makes accumulated water use visible, while short text introduces okara and the seven-day shelf life."
+          },
+          steps: [
+            {
+              title: "Translate evidence",
+              copy: "Desk research was reduced to a small set of indicators that could be encountered quickly: water, carbon, by-product, decay, and cost."
+            },
+            {
+              title: "Place it in use",
+              copy: "Moving the findings onto packaging connects upstream production decisions to the everyday moment of purchase and consumption."
+            },
+            {
+              title: "Use the prototype to ask",
+              copy: "The label tests whether environmental information can become part of a product experience rather than remain separate in a report."
+            }
+          ],
+          detail: {
+            image: "assets/projects/eating-future/process/research-packaging-footprint.jpg",
+            alt: "Packaging information modules about soybean curd residue and environmental impact",
+            caption: "Back-label modules: okara quantity, carbon and disposal pressure, rapid decomposition, and the financial difficulty of recovery are presented as connected consequences of production."
+          },
+          note: "The design was not developed into a final physical tofu container. Its value is methodological: the packaging prototype turns research findings into a visual and material proposition that can be discussed, questioned, and developed through design."
+        }
       },
       {
         id: "how",

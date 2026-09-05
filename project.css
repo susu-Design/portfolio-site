@@ -149,6 +149,20 @@ h2 { max-width: 760px; margin: 0; font-size: clamp(2.8rem, 5vw, 6rem); line-heig
 .food-research-finding strong { margin: auto 0 clamp(28px, 4vw, 55px); color: #e72f59; font-size: clamp(3.3rem, 7vw, 8rem); line-height: .8; letter-spacing: -.07em; }
 .food-research-finding h3 { max-width: 620px; margin: 0; font-size: clamp(1.65rem, 2.5vw, 3rem); line-height: .98; letter-spacing: -.04em; }
 .food-research-finding p { max-width: 600px; margin: 22px 0 0; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(.98rem, 1.25vw, 1.2rem); line-height: 1.48; }
+.food-research-output { margin: clamp(110px, 15vw, 230px) calc(0px - var(--pad)) calc(0px - clamp(95px, 12vw, 180px)); padding: clamp(90px, 11vw, 170px) var(--pad); background: #1a1a18; color: var(--food-cream); }
+.food-research-output > header { display: grid; grid-template-columns: minmax(190px, .42fr) minmax(0, 1.58fr); gap: clamp(26px, 5vw, 80px); margin-bottom: clamp(55px, 8vw, 115px); }
+.food-research-output > header > p { margin: 0; color: var(--food-green); font-size: .72rem; font-weight: 700; letter-spacing: .1em; }
+.food-research-output > header h3 { max-width: 1050px; margin: 0; color: var(--food-cream); font-size: clamp(3rem, 6vw, 7.5rem); line-height: .88; letter-spacing: -.06em; }
+.food-research-output > header span { display: block; max-width: 720px; margin-top: 32px; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(1.05rem, 1.45vw, 1.4rem); line-height: 1.5; }
+.food-output-hero, .food-output-detail { margin: 0; }
+.food-output-hero img, .food-output-detail img { display: block; width: 100%; background: #fff; }
+.food-output-hero figcaption, .food-output-detail figcaption { max-width: 780px; margin-top: 18px; color: rgba(245,240,223,.72); font-family: Georgia, 'Times New Roman', serif; font-size: clamp(.92rem, 1.1vw, 1.08rem); line-height: 1.45; }
+.food-output-method { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(24px, 3vw, 48px); margin: clamp(75px, 10vw, 145px) 0; }
+.food-output-method article { min-height: 280px; padding-top: 20px; border-top: 1px solid rgba(245,240,223,.45); }
+.food-output-method span { color: var(--food-green); font-size: .68rem; font-weight: 700; letter-spacing: .1em; }
+.food-output-method h4 { max-width: 300px; margin: 70px 0 0; color: var(--food-cream); font-size: clamp(1.5rem, 2.3vw, 2.8rem); line-height: 1; letter-spacing: -.04em; }
+.food-output-method p { max-width: 420px; margin: 22px 0 0; color: rgba(245,240,223,.76); font-family: Georgia, 'Times New Roman', serif; font-size: clamp(.95rem, 1.15vw, 1.12rem); line-height: 1.48; }
+.food-output-note { max-width: 900px; margin: clamp(55px, 7vw, 95px) 0 0 auto; padding-top: 22px; border-top: 1px solid rgba(245,240,223,.45); font-family: Georgia, 'Times New Roman', serif; font-size: clamp(1.2rem, 1.8vw, 1.75rem); line-height: 1.45; }
 .chapter-why { background: var(--food-green); }
 .chapter-how { background: #fff; }
 .chapter-what-if { background: #181816; color: var(--food-cream); }
@@ -203,6 +217,9 @@ footer p { margin: 0; }
   .food-chapter-heading { grid-template-columns: 1fr; }
   .food-research-process figcaption, .food-research-intro { grid-template-columns: 1fr; }
   .food-research-finding.is-wide { grid-template-columns: 1fr; grid-template-rows: minmax(360px, 62vw) auto; }
+  .food-research-output > header { grid-template-columns: 1fr; }
+  .food-output-method { grid-template-columns: 1fr; }
+  .food-output-method article { min-height: auto; padding-bottom: 55px; }
   .archive-intro-copy { grid-template-columns: 1fr; }
   .archive-meta { justify-content: flex-start; }
 }
