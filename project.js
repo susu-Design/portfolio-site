@@ -77,7 +77,7 @@ function speculativeFoodMarkup(item, nextItem) {
     </section>
 
     <nav class="food-nav" aria-label="Eating the Future chapters">
-      ${chapters.map((chapter) => `<a href="#${chapter.id}">${chapter.label}</a>`).join('')}
+      ${chapters.map((chapter) => `<a href="#${chapter.id}">${chapter.navLabel || chapter.label}</a>`).join('')}
     </nav>
 
     ${chapterMarkup}
