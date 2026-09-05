@@ -157,6 +157,13 @@ h2 { max-width: 760px; margin: 0; font-size: clamp(2.8rem, 5vw, 6rem); line-heig
 .food-output-board { margin: 0; padding: clamp(12px, 1.5vw, 24px); background: #fff; }
 .food-output-board img { display: block; width: 100%; height: auto; }
 .food-output-board figcaption { max-width: 820px; margin: 20px 0 4px; color: #353530; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(.92rem, 1.1vw, 1.08rem); line-height: 1.45; }
+.food-output-mockups { display: grid; gap: clamp(40px, 6vw, 90px); margin-top: clamp(55px, 8vw, 120px); }
+.food-output-mockup { margin: 0; }
+.food-output-mockup.is-detail { width: min(78%, 1120px); margin-left: auto; }
+.food-output-mockup img { display: block; width: 100%; height: auto; }
+.food-output-mockup figcaption { display: grid; grid-template-columns: minmax(150px, .35fr) minmax(0, 1.65fr); gap: clamp(24px, 4vw, 70px); padding-top: 18px; border-top: 1px solid rgba(245,240,223,.42); }
+.food-output-mockup figcaption span { color: var(--food-green); font-size: .68rem; font-weight: 700; letter-spacing: .1em; }
+.food-output-mockup figcaption p { max-width: 720px; margin: 0; color: rgba(245,240,223,.76); font-family: Georgia, 'Times New Roman', serif; font-size: clamp(.95rem, 1.15vw, 1.12rem); line-height: 1.48; }
 .food-output-explanation { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(30px, 5vw, 90px); margin-top: clamp(70px, 10vw, 145px); }
 .food-output-explanation article { padding-top: 20px; border-top: 1px solid rgba(245,240,223,.45); }
 .food-output-explanation span { color: var(--food-green); font-size: .68rem; font-weight: 700; letter-spacing: .1em; }
@@ -217,6 +224,7 @@ footer p { margin: 0; }
   .food-research-process figcaption, .food-research-intro { grid-template-columns: 1fr; }
   .food-research-finding.is-wide { grid-template-columns: 1fr; grid-template-rows: minmax(360px, 62vw) auto; }
   .food-research-output > header { grid-template-columns: 1fr; }
+  .food-output-mockup.is-detail { width: 100%; }
   .food-output-explanation { grid-template-columns: 1fr; }
   .food-output-explanation article { padding-bottom: 55px; }
   .archive-intro-copy { grid-template-columns: 1fr; }
@@ -244,6 +252,7 @@ footer p { margin: 0; }
   .food-research-findings { grid-template-columns: 1fr; }
   .food-research-finding, .food-research-finding.is-wide { grid-column: auto; grid-template-columns: 1fr; grid-template-rows: minmax(280px, 75vw) auto; }
   .food-research-finding strong { margin-top: 70px; }
+  .food-output-mockup figcaption { grid-template-columns: 1fr; }
   .source-section, footer { flex-direction: column; }
 }
 

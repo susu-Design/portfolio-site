@@ -66,6 +66,11 @@ function speculativeFoodMarkup(item, nextItem) {
             <p>${entry.caption}</p>
           </div>
         </article>`).join('');
+      const outputMockups = (chapter.designOutput?.mockups || []).map((entry) => `
+        <figure class="food-output-mockup${entry.detail ? ' is-detail' : ''}">
+          <img src="${entry.image}" alt="${entry.alt}" loading="lazy">
+          <figcaption><span>${entry.label}</span><p>${entry.caption}</p></figcaption>
+        </figure>`).join('');
       const designOutput = chapter.designOutput ? `
         <section class="food-research-output">
           <header>
@@ -76,6 +81,7 @@ function speculativeFoodMarkup(item, nextItem) {
             <img src="${chapter.designOutput.image}" alt="${chapter.designOutput.alt}" loading="lazy">
             <figcaption>${chapter.designOutput.caption}</figcaption>
           </figure>
+          <div class="food-output-mockups">${outputMockups}</div>
           <div class="food-output-explanation">
             ${chapter.designOutput.explanation.map((entry) => `<article><span>${entry.label}</span><h4>${entry.title}</h4><p>${entry.copy}</p></article>`).join('')}
           </div>

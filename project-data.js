@@ -178,6 +178,21 @@ window.PROJECTS = [
           image: "assets/projects/eating-future/tofu-label.jpg",
           alt: "Complete sustainable tofu packaging information design",
           caption: "Complete packaging study: water use, shelf life, soybean-curd residue, carbon impact, decomposition, and recovery cost are presented as one connected information system.",
+          mockups: [
+            {
+              image: "assets/projects/eating-future/tofu-packaging-family.jpg",
+              alt: "Six tofu packages presenting the sustainable packaging information as a coordinated product family",
+              label: "PACKAGING SYSTEM",
+              caption: "The research is distributed across a family of packs, turning each purchase into one part of the larger environmental story."
+            },
+            {
+              image: "assets/projects/eating-future/tofu-packaging-closeup.jpg",
+              alt: "Close-up of the sustainable tofu label applied to a transparent retail tray",
+              label: "RETAIL PROTOTYPE",
+              caption: "A die-cut paper sleeve keeps the tofu visible while carrying its water use, shelf life, carbon impact, and okara story into the retail setting.",
+              detail: true
+            }
+          ],
           explanation: [
             {
               label: "WHY PACKAGING?",
