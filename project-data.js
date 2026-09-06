@@ -274,21 +274,64 @@ window.PROJECTS = [
         copy: "Reframed entirely inside the Alien universe, the project asks what food and tableware carry aboard the Nostromo. In the tension among humans, androids, and the alien, an ordinary soybean becomes a memory of Earth and a fragment of human civilization.",
         imageAlt: "Alien universe world-building, speculative tableware sketches, and final dining artifact",
         images: [
-          "assets/projects/eating-future/process/alien-world-01.jpg",
-          "assets/projects/eating-future/process/alien-world-02.jpg",
-          "assets/projects/eating-future/process/alien-world-03.jpg",
-          "assets/projects/eating-future/process/alien-world-04.jpg",
-          "assets/projects/eating-future/process/alien-world-05.jpg",
-          "assets/projects/eating-future/process/alien-world-06.jpg",
-          "assets/projects/eating-future/process/what-if-15.jpg",
-          "assets/projects/eating-future/process/what-if-19.jpg",
-          "assets/projects/eating-future/process/what-if-20.jpg",
-          "assets/projects/eating-future/process/what-if-21.jpg",
-          "assets/projects/eating-future/process/what-if-22.jpg",
-          "assets/projects/eating-future/process/what-if-23.jpg",
-          "assets/projects/eating-future/process/paradox-alien-24.jpg",
-          "assets/projects/eating-future/process/paradox-alien-25.jpg",
-          "assets/projects/eating-future/process/paradox-alien-26.jpg"
+          {
+            sources: [
+              { src: "assets/projects/eating-future/process/theater-nostromo.jpg", alt: "The Nostromo travelling through deep space" },
+              { src: "assets/projects/eating-future/process/theater-hibernation.jpg", alt: "The crew waking from hibernation aboard the Nostromo" },
+              { src: "assets/projects/eating-future/process/theater-dining.jpg", alt: "The Nostromo crew sharing a meal" }
+            ],
+            label: "01 / THE ALIEN UNIVERSE",
+            caption: "On the Nostromo, eating is one of the few moments when the crew briefly returns to ordinary human life. Food therefore carries more than nutrition: it preserves memory, intimacy, and a fragile connection to Earth inside an artificial and hostile environment.",
+            wide: true
+          },
+          {
+            sources: [
+              { src: "assets/projects/eating-future/process/theater-study-hide.jpg", alt: "Early sketch exploring food as protection from the alien" },
+              { src: "assets/projects/eating-future/process/theater-study-tray.jpg", alt: "Early sketch exploring a sliding shared food tray" },
+              { src: "assets/projects/eating-future/process/theater-study-grave.jpg", alt: "Early sketch exploring food, burial, and memory" }
+            ],
+            fit: "contain",
+            label: "02 / BEHAVIOR STUDIES",
+            caption: "Early scenarios treated tableware as an actor rather than a passive container. Hiding, sharing, protecting, and burying food tested how an eating object might reveal fear, trust, hierarchy, and remembrance without relying on explanatory text.",
+            wide: true
+          },
+          {
+            sources: [
+              { src: "assets/projects/eating-future/process/theater-three-diners.jpg", alt: "Sketch mapping human, android, and alien relationships to one triangular object" },
+              { src: "assets/projects/eating-future/process/theater-radial-concept.jpg", alt: "Radial tableware interaction concept with soybeans" }
+            ],
+            fit: "contain",
+            label: "03 / THREE DINERS",
+            caption: "The design focuses on three possible diners—human, android, and alien. A single triangular vessel changes meaning through each body: a familiar utensil for the human, a precise interface for the android, and a feeding mechanism that anticipates the alien's predatory anatomy.",
+            wide: true
+          },
+          {
+            sources: [
+              { src: "assets/projects/eating-future/process/theater-form-human.jpg", alt: "Developed mechanism sketch for the human interaction" },
+              { src: "assets/projects/eating-future/process/theater-form-alien-robot.jpg", alt: "Developed interaction sketches for the alien and android" },
+              { src: "assets/projects/eating-future/process/theater-form-detail.jpg", alt: "Refined triangular food vessel sketch" }
+            ],
+            fit: "contain",
+            label: "04 / FORM + INTERACTION",
+            caption: "The triangular form grew from the relationship among the three characters. Slots, channels, and hinged surfaces choreograph how soybeans are released, separated, and consumed, translating a shared meal into three distinct rituals.",
+            wide: true
+          },
+          {
+            sources: [
+              { src: "assets/projects/eating-future/process/theater-prototype.jpg", alt: "3D-printed triangular tableware prototype tested with soybeans" },
+              { src: "assets/projects/eating-future/process/theater-final-detail.jpg", alt: "Polished final vessel with soybeans passing through its slot" }
+            ],
+            label: "05 / PROTOTYPE",
+            caption: "A 3D-printed model tested scale, balance, openings, and the movement of soybeans. The final metallic surface then brings the object into the visual language of the Nostromo—part tableware, part machine, and part biological specimen.",
+            wide: true
+          },
+          {
+            src: "assets/projects/eating-future/process/theater-final-scene.jpg",
+            alt: "Final speculative dining object staged aboard the Nostromo",
+            label: "06 / THEATER OF FOOD",
+            caption: "Placed on the ship's dining table, the object turns an ordinary soybean into a remnant of Earth. The meal becomes a small theater in which human memory, machine logic, and alien appetite meet.",
+            wide: true
+          }
         ]
       }
     ],

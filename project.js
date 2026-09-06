@@ -104,10 +104,17 @@ function speculativeFoodMarkup(item, nextItem) {
     const gallery = images.map((image, index) => {
       const entry = typeof image === 'string' ? { src: image } : image;
       const isWide = entry.wide ?? (index % 3 === 0 || (index === images.length - 1 && images.length % 3 === 2));
+      const sources = entry.sources || [];
+      const media = sources.length
+        ? `<div class="food-process-cluster cluster-${Math.min(sources.length, 3)}${entry.fit === 'contain' ? ' is-contain' : ''}">${sources.map((source, sourceIndex) => {
+            const item = typeof source === 'string' ? { src: source } : source;
+            return `<img src="${item.src}" alt="${item.alt || `${chapter.imageAlt} ${index + 1}.${sourceIndex + 1}`}" loading="lazy">`;
+          }).join('')}</div>`
+        : `<img src="${entry.src}" alt="${entry.alt || `${chapter.imageAlt} ${index + 1}`}" loading="lazy">`;
       const caption = entry.caption
         ? `<figcaption><span>${entry.label || String(index + 1).padStart(2, '0')}</span><p>${entry.caption}</p></figcaption>`
         : '';
-      return `<figure class="food-process-image${isWide ? ' is-wide' : ''}"><img src="${entry.src}" alt="${entry.alt || `${chapter.imageAlt} ${index + 1}`}" loading="lazy">${caption}</figure>`;
+      return `<figure class="food-process-image${isWide ? ' is-wide' : ''}">${media}${caption}</figure>`;
     }).join('');
     return `<section class="food-chapter chapter-${chapter.id}" id="${chapter.id}">
       <header class="food-chapter-heading">

@@ -130,6 +130,14 @@ h2 { max-width: 760px; margin: 0; font-size: clamp(2.8rem, 5vw, 6rem); line-heig
 .food-process-image { grid-column: span 6; margin: 0; background: #fff; }
 .food-process-image.is-wide { grid-column: span 12; }
 .food-process-image img { display: block; width: 100%; height: auto; object-fit: contain; }
+.food-process-cluster { display: grid; gap: clamp(8px, 1vw, 15px); overflow: hidden; }
+.food-process-cluster.cluster-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.food-process-cluster.cluster-3 { grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); grid-template-rows: repeat(2, minmax(0, 1fr)); }
+.food-process-cluster.cluster-3 img:first-child { grid-row: 1 / -1; }
+.food-process-cluster img { width: 100%; height: 100%; min-height: 0; aspect-ratio: 16 / 10; object-fit: cover; background: #efeee8; }
+.food-process-cluster.cluster-3 img:first-child { aspect-ratio: auto; }
+.food-process-cluster.is-contain { background: #fff; }
+.food-process-cluster.is-contain img { object-fit: contain; background: #fff; }
 .food-process-image figcaption { display: grid; grid-template-columns: minmax(190px, .42fr) minmax(0, 1.58fr); gap: clamp(26px, 5vw, 80px); padding-top: 18px; border-top: 1px solid rgba(21,21,18,.55); }
 .food-process-image figcaption span { font-size: .68rem; font-weight: 700; letter-spacing: .1em; }
 .food-process-image figcaption p { max-width: 680px; margin: 0; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(1rem, 1.35vw, 1.3rem); line-height: 1.45; }
@@ -177,6 +185,10 @@ h2 { max-width: 760px; margin: 0; font-size: clamp(2.8rem, 5vw, 6rem); line-heig
 .chapter-how { background: #fff; }
 .chapter-what-if { background: #181816; color: var(--food-cream); }
 .chapter-what-if .food-chapter-heading > p { color: var(--food-pink); }
+.chapter-what-if .food-process-image { background: transparent; }
+.chapter-what-if .food-process-image figcaption { border-color: rgba(245,240,223,.42); }
+.chapter-what-if .food-process-image figcaption span { color: var(--food-pink); }
+.chapter-what-if .food-process-image figcaption p { color: rgba(245,240,223,.78); }
 .chapter-paradox { background: var(--food-pink); }
 .chapter-paradox .food-chapter-heading > p { color: var(--ink); }
 .food-source { background: var(--food-cream); }
