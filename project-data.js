@@ -271,7 +271,7 @@ window.PROJECTS = [
         navLabel: "THEATER",
         label: "PART 03 · THEATER OF FOOD",
         title: "What does food carry when Earth is far away?",
-        copy: "Reframed entirely inside the Alien universe, the project asks what food and tableware carry aboard the Nostromo. In the tension among humans, androids, and the alien, an ordinary soybean becomes a memory of Earth and a fragment of human civilization.",
+        copy: "Inside the Alien universe, an ordinary soybean becomes a memory of Earth. The tableware stages the tension among human habit, machine logic, and alien appetite.",
         imageAlt: "Alien universe world-building, speculative tableware sketches, and final dining artifact",
         images: [
           {
@@ -281,39 +281,23 @@ window.PROJECTS = [
               { src: "assets/projects/eating-future/process/theater-dining.jpg", alt: "The Nostromo crew sharing a meal" }
             ],
             label: "01 / THE ALIEN UNIVERSE",
-            caption: "On the Nostromo, eating is one of the few moments when the crew briefly returns to ordinary human life. Food therefore carries more than nutrition: it preserves memory, intimacy, and a fragile connection to Earth inside an artificial and hostile environment.",
+            caption: "Aboard the Nostromo, the shared meal briefly restores ordinary human life. Food carries memory and a fragile connection to Earth.",
             wide: true
           },
           {
             sources: [
               { src: "assets/projects/eating-future/process/theater-study-hide.jpg", alt: "Early sketch exploring food as protection from the alien" },
               { src: "assets/projects/eating-future/process/theater-study-tray.jpg", alt: "Early sketch exploring a sliding shared food tray" },
-              { src: "assets/projects/eating-future/process/theater-study-grave.jpg", alt: "Early sketch exploring food, burial, and memory" }
-            ],
-            fit: "contain",
-            label: "02 / BEHAVIOR STUDIES",
-            caption: "Early scenarios treated tableware as an actor rather than a passive container. Hiding, sharing, protecting, and burying food tested how an eating object might reveal fear, trust, hierarchy, and remembrance without relying on explanatory text.",
-            wide: true
-          },
-          {
-            sources: [
+              { src: "assets/projects/eating-future/process/theater-study-grave.jpg", alt: "Early sketch exploring food, burial, and memory" },
               { src: "assets/projects/eating-future/process/theater-three-diners.jpg", alt: "Sketch mapping human, android, and alien relationships to one triangular object" },
-              { src: "assets/projects/eating-future/process/theater-radial-concept.jpg", alt: "Radial tableware interaction concept with soybeans" }
-            ],
-            fit: "contain",
-            label: "03 / THREE DINERS",
-            caption: "The design focuses on three possible diners—human, android, and alien. A single triangular vessel changes meaning through each body: a familiar utensil for the human, a precise interface for the android, and a feeding mechanism that anticipates the alien's predatory anatomy.",
-            wide: true
-          },
-          {
-            sources: [
+              { src: "assets/projects/eating-future/process/theater-radial-concept.jpg", alt: "Radial tableware interaction concept with soybeans" },
               { src: "assets/projects/eating-future/process/theater-form-human.jpg", alt: "Developed mechanism sketch for the human interaction" },
               { src: "assets/projects/eating-future/process/theater-form-alien-robot.jpg", alt: "Developed interaction sketches for the alien and android" },
               { src: "assets/projects/eating-future/process/theater-form-detail.jpg", alt: "Refined triangular food vessel sketch" }
             ],
             fit: "contain",
-            label: "04 / FORM + INTERACTION",
-            caption: "The triangular form grew from the relationship among the three characters. Slots, channels, and hinged surfaces choreograph how soybeans are released, separated, and consumed, translating a shared meal into three distinct rituals.",
+            label: "02 / SKETCH DEVELOPMENT",
+            caption: "Hiding, sharing and burying food established the behavioral possibilities. These converged into one triangular vessel with different feeding rituals for the human, android and alien.",
             wide: true
           },
           {
@@ -321,15 +305,17 @@ window.PROJECTS = [
               { src: "assets/projects/eating-future/process/theater-prototype.jpg", alt: "3D-printed triangular tableware prototype tested with soybeans" },
               { src: "assets/projects/eating-future/process/theater-final-detail.jpg", alt: "Polished final vessel with soybeans passing through its slot" }
             ],
-            label: "05 / PROTOTYPE",
-            caption: "A 3D-printed model tested scale, balance, openings, and the movement of soybeans. The final metallic surface then brings the object into the visual language of the Nostromo—part tableware, part machine, and part biological specimen.",
+            fit: "contain",
+            label: "03 / PROTOTYPE",
+            caption: "The model tested scale, balance and soybean movement; its metallic finish connects tableware, machine and biological specimen.",
             wide: true
           },
           {
             src: "assets/projects/eating-future/process/theater-final-scene.jpg",
             alt: "Final speculative dining object staged aboard the Nostromo",
-            label: "06 / THEATER OF FOOD",
-            caption: "Placed on the ship's dining table, the object turns an ordinary soybean into a remnant of Earth. The meal becomes a small theater in which human memory, machine logic, and alien appetite meet.",
+            label: "04 / THEATER OF FOOD",
+            caption: "On the ship's dining table, the soybean becomes a remnant of Earth—a meeting point for human memory, machine logic and alien appetite.",
+            featured: true,
             wide: true
           }
         ]

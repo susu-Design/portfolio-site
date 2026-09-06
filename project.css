@@ -185,10 +185,24 @@ h2 { max-width: 760px; margin: 0; font-size: clamp(2.8rem, 5vw, 6rem); line-heig
 .chapter-how { background: #fff; }
 .chapter-what-if { background: #181816; color: var(--food-cream); }
 .chapter-what-if .food-chapter-heading > p { color: var(--food-pink); }
+.chapter-what-if { padding-top: clamp(60px, 7vw, 100px); padding-bottom: clamp(65px, 8vw, 115px); }
+.chapter-what-if .food-chapter-heading { grid-template-columns: minmax(150px, .32fr) minmax(0, 1.68fr); margin-bottom: clamp(38px, 5vw, 70px); }
+.chapter-what-if .food-chapter-heading > p { max-width: 230px; font-size: clamp(1.25rem, 2vw, 2.2rem); line-height: 1; letter-spacing: -.035em; }
+.chapter-what-if .food-chapter-heading h2 { max-width: 880px; font-size: clamp(2.5rem, 5vw, 6rem); line-height: .9; }
+.chapter-what-if .food-chapter-heading span { max-width: 760px; margin-top: 20px; font-size: clamp(.88rem, 1.05vw, 1.05rem); line-height: 1.38; }
+.chapter-what-if .food-process-grid { gap: clamp(28px, 3.2vw, 50px); }
 .chapter-what-if .food-process-image { background: transparent; }
+.chapter-what-if .food-process-cluster.cluster-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: none; }
+.chapter-what-if .food-process-cluster.cluster-3 img,
+.chapter-what-if .food-process-cluster.cluster-3 img:first-child { grid-row: auto; height: clamp(120px, 13vw, 220px); aspect-ratio: auto; object-fit: cover; }
+.chapter-what-if .food-process-cluster.cluster-8 { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(6px, .7vw, 11px); padding: clamp(6px, .7vw, 11px); }
+.chapter-what-if .food-process-cluster.cluster-8 img { height: clamp(145px, 17vw, 275px); aspect-ratio: auto; }
+.chapter-what-if .food-process-cluster.cluster-2 img { height: clamp(220px, 28vw, 430px); aspect-ratio: auto; }
 .chapter-what-if .food-process-image figcaption { border-color: rgba(245,240,223,.42); }
 .chapter-what-if .food-process-image figcaption span { color: var(--food-pink); }
-.chapter-what-if .food-process-image figcaption p { color: rgba(245,240,223,.78); }
+.chapter-what-if .food-process-image figcaption { grid-template-columns: minmax(155px, .25fr) minmax(0, 1.75fr); gap: clamp(18px, 3vw, 50px); padding-top: 10px; }
+.chapter-what-if .food-process-image figcaption p { max-width: none; color: rgba(245,240,223,.78); font-size: clamp(.78rem, .88vw, .92rem); line-height: 1.32; }
+.chapter-what-if .food-process-image.is-featured figcaption p { max-width: 760px; }
 .chapter-paradox { background: var(--food-pink); }
 .chapter-paradox .food-chapter-heading > p { color: var(--ink); }
 .food-source { background: var(--food-cream); }
@@ -237,6 +251,8 @@ footer p { margin: 0; }
   .thesis-media-heading, .thesis-media-grid { grid-template-columns: 1fr; }
   .thesis-book { max-width: 580px; }
   .food-chapter-heading { grid-template-columns: 1fr; }
+  .chapter-what-if .food-chapter-heading { grid-template-columns: 1fr; }
+  .chapter-what-if .food-process-image figcaption { grid-template-columns: 130px minmax(0, 1fr); }
   .food-research-process figcaption, .food-process-image figcaption, .food-research-intro { grid-template-columns: 1fr; }
   .food-research-finding.is-wide { grid-template-columns: 1fr; grid-template-rows: minmax(360px, 62vw) auto; }
   .food-research-output > header { grid-template-columns: 1fr; }
@@ -265,6 +281,10 @@ footer p { margin: 0; }
   .food-nav { justify-content: flex-start; overflow-x: auto; }
   .food-nav a { flex: 0 0 auto; }
   .food-process-image, .food-process-image.is-wide { grid-column: span 12; }
+  .chapter-what-if .food-process-cluster.cluster-8 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .chapter-what-if .food-process-cluster.cluster-8 img { height: clamp(150px, 54vw, 250px); }
+  .chapter-what-if .food-process-cluster.cluster-3 { grid-template-columns: 1.3fr repeat(2, .85fr); }
+  .chapter-what-if .food-process-image figcaption { grid-template-columns: 1fr; gap: 7px; }
   .food-research-findings { grid-template-columns: 1fr; }
   .food-research-finding, .food-research-finding.is-wide { grid-column: auto; grid-template-columns: 1fr; grid-template-rows: minmax(280px, 75vw) auto; }
   .food-research-finding strong { margin-top: 70px; }
