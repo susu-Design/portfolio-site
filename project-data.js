@@ -223,6 +223,7 @@ window.PROJECTS = [
             fit: "contain",
             label: "01 / CONCEPT",
             caption: "Natural seed dispersal inspired a machine that distributes an absent food memory through scent: industrial tofu is eaten beside an okara-scented candle.",
+            layout: "concept",
             wide: true
           },
           {
@@ -235,13 +236,18 @@ window.PROJECTS = [
             fit: "contain",
             label: "02 / DEVELOPMENT",
             caption: "Material tests combined dried okara with paraffin. Sketches, 3D-printed molds and flame tests then integrated the candle, plate and chopstick rest into one sensory tableware system.",
+            layout: "development",
             wide: true
           },
           {
-            src: "assets/projects/eating-future/process/disseminating-machine-candle.jpg",
-            alt: "Lit tofu-shaped candle made with okara",
+            sources: [
+              { src: "assets/projects/eating-future/process/machine-candle-tableware.jpg", alt: "Lit tofu-shaped candle placed in the tableware prototype" },
+              { src: "assets/projects/eating-future/process/machine-candle-full.jpg", alt: "Full view of the lit tofu-shaped candle" },
+              { src: "assets/projects/eating-future/process/disseminating-machine-candle.jpg", alt: "Close-up of the tofu-shaped candle flame" }
+            ],
             label: "03 / DISSEMINATING MACHINE",
             caption: "The final tofu-shaped candle returns discarded okara to the table as scent, making an invisible loss in industrial food production perceptible.",
+            layout: "final",
             featured: true,
             wide: true
           }

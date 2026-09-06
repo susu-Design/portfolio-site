@@ -114,7 +114,7 @@ function speculativeFoodMarkup(item, nextItem) {
       const caption = entry.caption
         ? `<figcaption><span>${entry.label || String(index + 1).padStart(2, '0')}</span><p>${entry.caption}</p></figcaption>`
         : '';
-      return `<figure class="food-process-image${isWide ? ' is-wide' : ''}${entry.featured ? ' is-featured' : ''}">${media}${caption}</figure>`;
+      return `<figure class="food-process-image${isWide ? ' is-wide' : ''}${entry.featured ? ' is-featured' : ''}${entry.layout ? ` is-${entry.layout}` : ''}">${media}${caption}</figure>`;
     }).join('');
     return `<section class="food-chapter chapter-${chapter.id}" id="${chapter.id}">
       <header class="food-chapter-heading">
