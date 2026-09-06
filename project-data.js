@@ -227,16 +227,30 @@ window.PROJECTS = [
             wide: true
           },
           {
+            src: "assets/projects/eating-future/process/okara-material-experiment.jpg",
+            alt: "Complete sequence of okara and paraffin material experiments",
+            label: "02 / MATERIAL TEST",
+            caption: "Dried okara was mixed with paraffin, heated and cast to test structure, texture and scent release.",
+            layout: "process-strip",
+            wide: true
+          },
+          {
             sources: [
-              { src: "assets/projects/eating-future/process/okara-material-experiment.jpg", alt: "Okara and paraffin material experiments" },
               { src: "assets/projects/eating-future/process/tableware-sketches.jpg", alt: "Sketches exploring the relationship between candle, plate, and chopstick holder" },
-              { src: "assets/projects/eating-future/process/tableware-form-study.jpg", alt: "Tableware and candle form studies drawn on paper" },
-              { src: "assets/projects/eating-future/process/tableware-fabrication.jpg", alt: "Sketch, candle test, 3D printing, and tableware mold fabrication" }
+              { src: "assets/projects/eating-future/process/tableware-form-study.jpg", alt: "Tableware and candle form studies drawn on paper" }
             ],
             fit: "contain",
-            label: "02 / DEVELOPMENT",
-            caption: "Material tests combined dried okara with paraffin. Sketches, 3D-printed molds and flame tests then integrated the candle, plate and chopstick rest into one sensory tableware system.",
-            layout: "development",
+            label: "03 / FORM DEVELOPMENT",
+            caption: "The candle, plate and chopstick rest were developed as one system, so eating and smelling happen within the same composition.",
+            layout: "sketch-development",
+            wide: true
+          },
+          {
+            src: "assets/projects/eating-future/process/tableware-fabrication.jpg",
+            alt: "Complete sequence from design sketch and candle test to 3D printing and finished mold",
+            label: "04 / PROTOTYPING",
+            caption: "Sketches moved into 3D-printed molds and flame tests, checking proportion, placement and use at the table.",
+            layout: "process-strip",
             wide: true
           },
           {
@@ -245,7 +259,7 @@ window.PROJECTS = [
               { src: "assets/projects/eating-future/process/machine-candle-full.jpg", alt: "Full view of the lit tofu-shaped candle" },
               { src: "assets/projects/eating-future/process/disseminating-machine-candle.jpg", alt: "Close-up of the tofu-shaped candle flame" }
             ],
-            label: "03 / DISSEMINATING MACHINE",
+            label: "05 / DISSEMINATING MACHINE",
             caption: "The final tofu-shaped candle returns discarded okara to the table as scent, making an invisible loss in industrial food production perceptible.",
             layout: "final",
             featured: true,

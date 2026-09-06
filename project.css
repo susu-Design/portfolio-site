@@ -149,15 +149,14 @@ h2 { max-width: 760px; margin: 0; font-size: clamp(2.8rem, 5vw, 6rem); line-heig
 .chapter-how .food-chapter-heading span { max-width: 760px; margin-top: 20px; font-size: clamp(.88rem, 1.05vw, 1.05rem); line-height: 1.38; }
 .chapter-how .food-process-grid { gap: clamp(28px, 3.2vw, 50px); }
 .chapter-how .food-process-image.is-concept { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(250px, .45fr); gap: clamp(18px, 2vw, 34px); align-items: end; width: min(92%, 1450px); margin-inline: auto; }
+.chapter-how .is-concept .food-process-cluster.cluster-2 { grid-template-columns: minmax(0, .38fr) minmax(0, .62fr); }
 .chapter-how .is-concept .food-process-cluster.cluster-2 img { height: clamp(180px, 20vw, 315px); aspect-ratio: auto; }
 .chapter-how .is-concept figcaption { display: block; padding: 14px 0 0; }
 .chapter-how .is-concept figcaption p { margin-top: 12px; }
-.chapter-how .food-process-cluster.cluster-4 { grid-template-columns: minmax(0, 2fr) minmax(250px, .72fr); grid-template-rows: repeat(3, minmax(0, 1fr)); gap: clamp(7px, .8vw, 12px); padding: clamp(7px, .8vw, 12px); background: #f1f0eb; }
-.chapter-how .food-process-cluster.cluster-4 img { height: clamp(105px, 10vw, 170px); aspect-ratio: auto; object-fit: cover; }
-.chapter-how .food-process-cluster.cluster-4 img:nth-child(1) { grid-column: 1; grid-row: 1; }
-.chapter-how .food-process-cluster.cluster-4 img:nth-child(2) { grid-column: 1; grid-row: 2; }
-.chapter-how .food-process-cluster.cluster-4 img:nth-child(3) { grid-column: 2; grid-row: 1 / -1; height: 100%; object-fit: contain; background: #fff; }
-.chapter-how .food-process-cluster.cluster-4 img:nth-child(4) { grid-column: 1; grid-row: 3; }
+.chapter-how .food-process-image.is-process-strip { width: min(94%, 1540px); margin-inline: auto; }
+.chapter-how .food-process-image.is-process-strip > img { width: 100%; height: auto; max-height: 390px; object-fit: contain; background: #f1f0eb; }
+.chapter-how .is-sketch-development .food-process-cluster.cluster-2 { grid-template-columns: minmax(0, 1.7fr) minmax(280px, .7fr); padding: clamp(8px, .9vw, 14px); background: #f1f0eb; }
+.chapter-how .is-sketch-development .food-process-cluster.cluster-2 img { width: 100%; height: clamp(280px, 30vw, 470px); aspect-ratio: auto; object-fit: contain; background: #fff; }
 .chapter-how .food-process-image figcaption { grid-template-columns: minmax(155px, .25fr) minmax(0, 1.75fr); gap: clamp(18px, 3vw, 50px); padding-top: 10px; }
 .chapter-how .food-process-image figcaption p { max-width: none; font-size: clamp(.78rem, .88vw, .92rem); line-height: 1.32; }
 .chapter-how .is-final .food-process-cluster.cluster-3 { grid-template-columns: minmax(0, 1.6fr) minmax(260px, .72fr); grid-template-rows: repeat(2, minmax(0, 1fr)); height: clamp(480px, 54vw, 780px); gap: clamp(8px, 1vw, 15px); background: #d7d9d8; }
@@ -308,10 +307,10 @@ footer p { margin: 0; }
   .food-process-image, .food-process-image.is-wide { grid-column: span 12; }
   .chapter-how .food-process-cluster.cluster-2 { grid-template-columns: 1fr; }
   .chapter-how .food-process-cluster.cluster-2 img { height: clamp(175px, 58vw, 300px); }
+  .chapter-how .is-concept .food-process-cluster.cluster-2,
+  .chapter-how .is-sketch-development .food-process-cluster.cluster-2 { grid-template-columns: 1fr; }
+  .chapter-how .is-sketch-development .food-process-cluster.cluster-2 img { height: auto; max-height: 330px; }
   .chapter-how .food-process-image figcaption { grid-template-columns: 1fr; gap: 7px; }
-  .chapter-how .food-process-cluster.cluster-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(2, minmax(0, 1fr)); }
-  .chapter-how .food-process-cluster.cluster-4 img,
-  .chapter-how .food-process-cluster.cluster-4 img:nth-child(n) { grid-column: auto; grid-row: auto; width: 100%; height: clamp(135px, 42vw, 220px); }
   .chapter-how .is-final .food-process-cluster.cluster-3 { grid-template-columns: 1.25fr .75fr; height: clamp(380px, 112vw, 620px); }
   .chapter-what-if .food-process-cluster.cluster-8 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .chapter-what-if .food-process-cluster.cluster-8 img { height: clamp(150px, 54vw, 250px); }
