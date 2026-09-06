@@ -130,7 +130,7 @@ window.PROJECTS = [
           }
         ],
         findingsLabel: "TOFU + SUSTAINABILITY",
-        findingsTitle: "Four points where efficiency creates an environmental or cultural trade-off.",
+        findingsTitle: "Four connected points across tofu's industrial system.",
         findings: [
           {
             number: "01",

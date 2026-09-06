@@ -169,20 +169,20 @@ h2 { max-width: 760px; margin: 0; font-size: clamp(2.8rem, 5vw, 6rem); line-heig
 .food-research-process figcaption { display: grid; grid-template-columns: minmax(190px, .42fr) minmax(0, 1.58fr); gap: clamp(26px, 5vw, 80px); padding-top: 18px; border-top: 1px solid rgba(21,21,18,.55); }
 .food-research-process figcaption span, .food-research-finding > div > span { font-size: .68rem; font-weight: 700; letter-spacing: .1em; }
 .food-research-process figcaption p { max-width: 680px; margin: 0; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(1rem, 1.35vw, 1.3rem); line-height: 1.45; }
-.food-research-intro { display: grid; grid-template-columns: minmax(190px, .42fr) minmax(0, 1.58fr); gap: clamp(26px, 5vw, 80px); margin: clamp(100px, 14vw, 210px) 0 clamp(50px, 7vw, 95px); padding-top: 24px; border-top: 1px solid rgba(21,21,18,.55); }
+.food-research-intro { display: grid; grid-template-columns: minmax(190px, .42fr) minmax(0, 1.58fr); gap: clamp(26px, 5vw, 80px); margin: clamp(45px, 6vw, 80px) 0 clamp(22px, 3vw, 38px); padding-top: 15px; border-top: 1px solid rgba(21,21,18,.55); }
 .food-research-intro > p { margin: 0; color: #e72f59; font-size: .72rem; font-weight: 700; letter-spacing: .1em; }
-.food-research-intro h3 { max-width: 980px; margin: 0; font-size: clamp(2.4rem, 5vw, 6.2rem); line-height: .9; letter-spacing: -.055em; }
-.food-research-findings { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(24px, 3vw, 48px); }
-.food-research-finding { display: grid; grid-template-rows: minmax(300px, 48vw) auto; margin: 0; background: #fff; }
-.food-research-finding.is-wide { grid-column: 1 / -1; grid-template-columns: minmax(0, 1.3fr) minmax(300px, .7fr); grid-template-rows: minmax(430px, 55vw); }
+.food-research-intro h3 { max-width: 760px; margin: 0; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(1rem, 1.35vw, 1.3rem); line-height: 1.35; letter-spacing: 0; font-weight: 400; }
+.food-research-findings { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(10px, 1.3vw, 20px); }
+.food-research-finding,
+.food-research-finding.is-wide { display: grid; grid-column: auto; grid-template-columns: 1fr; grid-template-rows: clamp(145px, 15vw, 235px) auto; margin: 0; background: #fff; }
 .food-research-finding figure { min-width: 0; margin: 0; overflow: hidden; background: #f0eee6; }
 .food-research-finding img { width: 100%; height: 100%; object-fit: cover; }
 .food-research-finding:first-child img { object-fit: contain; }
-.food-research-finding > div { display: flex; flex-direction: column; align-items: flex-start; padding: clamp(26px, 3.5vw, 54px); }
-.food-research-finding strong { margin: auto 0 clamp(28px, 4vw, 55px); color: #e72f59; font-size: clamp(3.3rem, 7vw, 8rem); line-height: .8; letter-spacing: -.07em; }
-.food-research-finding h3 { max-width: 620px; margin: 0; font-size: clamp(1.65rem, 2.5vw, 3rem); line-height: .98; letter-spacing: -.04em; }
-.food-research-finding p { max-width: 600px; margin: 22px 0 0; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(.98rem, 1.25vw, 1.2rem); line-height: 1.48; }
-.food-research-output { margin: clamp(110px, 15vw, 230px) calc(0px - var(--pad)) calc(0px - clamp(95px, 12vw, 180px)); padding: clamp(90px, 11vw, 170px) var(--pad); background: #1a1a18; color: var(--food-cream); }
+.food-research-finding > div { display: flex; flex-direction: column; align-items: flex-start; padding: clamp(16px, 1.8vw, 28px); }
+.food-research-finding strong { margin: clamp(26px, 3vw, 46px) 0 clamp(18px, 2vw, 30px); color: #e72f59; font-size: clamp(2.1rem, 3.7vw, 4.5rem); line-height: .82; letter-spacing: -.06em; }
+.food-research-finding h3 { max-width: 310px; margin: 0; font-size: clamp(1.05rem, 1.35vw, 1.45rem); line-height: 1.02; letter-spacing: -.025em; }
+.food-research-finding p { max-width: 330px; margin: 12px 0 0; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(.76rem, .82vw, .88rem); line-height: 1.4; }
+.food-research-output { margin: clamp(55px, 7vw, 100px) calc(0px - var(--pad)) calc(0px - clamp(95px, 12vw, 180px)); padding: clamp(90px, 11vw, 170px) var(--pad); background: #1a1a18; color: var(--food-cream); }
 .food-research-output > header { display: grid; grid-template-columns: minmax(190px, .42fr) minmax(0, 1.58fr); gap: clamp(26px, 5vw, 80px); margin-bottom: clamp(55px, 8vw, 115px); }
 .food-research-output > header > p { margin: 0; color: var(--food-green); font-size: .72rem; font-weight: 700; letter-spacing: .1em; }
 .food-research-output > header h3 { max-width: 1050px; margin: 0; color: var(--food-cream); font-size: clamp(3rem, 6vw, 7.5rem); line-height: .88; letter-spacing: -.06em; }
@@ -278,7 +278,9 @@ footer p { margin: 0; }
   .chapter-what-if .food-chapter-heading { grid-template-columns: 1fr; }
   .chapter-what-if .food-process-image figcaption { grid-template-columns: 130px minmax(0, 1fr); }
   .food-research-process figcaption, .food-process-image figcaption, .food-research-intro { grid-template-columns: 1fr; }
-  .food-research-finding.is-wide { grid-template-columns: 1fr; grid-template-rows: minmax(360px, 62vw) auto; }
+  .food-research-findings { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .food-research-finding,
+  .food-research-finding.is-wide { grid-template-columns: 1fr; grid-template-rows: clamp(170px, 28vw, 260px) auto; }
   .food-research-output > header { grid-template-columns: 1fr; }
   .food-output-mockup.is-detail { width: 100%; }
   .food-output-explanation { grid-template-columns: 1fr; }
@@ -317,8 +319,8 @@ footer p { margin: 0; }
   .chapter-what-if .food-process-cluster.cluster-3 { grid-template-columns: 1.3fr repeat(2, .85fr); }
   .chapter-what-if .food-process-image figcaption { grid-template-columns: 1fr; gap: 7px; }
   .food-research-findings { grid-template-columns: 1fr; }
-  .food-research-finding, .food-research-finding.is-wide { grid-column: auto; grid-template-columns: 1fr; grid-template-rows: minmax(280px, 75vw) auto; }
-  .food-research-finding strong { margin-top: 70px; }
+  .food-research-finding, .food-research-finding.is-wide { grid-column: auto; grid-template-columns: 1fr; grid-template-rows: clamp(180px, 56vw, 260px) auto; }
+  .food-research-finding strong { margin-top: 32px; }
   .food-output-mockup figcaption { grid-template-columns: 1fr; }
   .source-section, footer { flex-direction: column; }
 }
