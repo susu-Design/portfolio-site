@@ -101,9 +101,13 @@ function speculativeFoodMarkup(item, nextItem) {
       </section>`;
     }
     const images = chapter.images || [];
-    const gallery = images.map((src, index) => {
-      const isWide = index % 3 === 0 || (index === images.length - 1 && images.length % 3 === 2);
-      return `<figure class="food-process-image${isWide ? ' is-wide' : ''}"><img src="${src}" alt="${chapter.imageAlt} ${index + 1}" loading="lazy"></figure>`;
+    const gallery = images.map((image, index) => {
+      const entry = typeof image === 'string' ? { src: image } : image;
+      const isWide = entry.wide ?? (index % 3 === 0 || (index === images.length - 1 && images.length % 3 === 2));
+      const caption = entry.caption
+        ? `<figcaption><span>${entry.label || String(index + 1).padStart(2, '0')}</span><p>${entry.caption}</p></figcaption>`
+        : '';
+      return `<figure class="food-process-image${isWide ? ' is-wide' : ''}"><img src="${entry.src}" alt="${entry.alt || `${chapter.imageAlt} ${index + 1}`}" loading="lazy">${caption}</figure>`;
     }).join('');
     return `<section class="food-chapter chapter-${chapter.id}" id="${chapter.id}">
       <header class="food-chapter-heading">

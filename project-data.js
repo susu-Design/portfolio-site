@@ -215,11 +215,55 @@ window.PROJECTS = [
         copy: "Okara—the aromatic soybean pulp discarded by industrial production—was refined into a tofu-shaped candle and placed within a tableware system. Diners eat standardized tofu while breathing the fragrance of traditional tofu, turning lost flavor into a sensory contradiction.",
         imageAlt: "Disseminating Machine tableware, okara material experiments, and tofu-shaped candle",
         images: [
-          "assets/projects/eating-future/process/how-11.jpg",
-          "assets/projects/eating-future/process/how-12.jpg",
-          "assets/projects/eating-future/process/how-13.jpg",
-          "assets/projects/eating-future/process/how-15.jpg",
-          "assets/projects/eating-future/process/disseminating-machine-candle.jpg"
+          {
+            src: "assets/projects/eating-future/process/dissemination-reference.png",
+            alt: "Wind-dispersed seeds scattered across the ground",
+            label: "01 / NATURAL DISPERSAL",
+            caption: "Seed pods distribute material through release, movement, and distance. This natural mechanism became the starting point for a machine that spreads a missing food memory through scent.",
+            wide: true
+          },
+          {
+            src: "assets/projects/eating-future/process/candle-concept-sketch.jpg",
+            alt: "Concept sketch pairing a tofu-shaped okara candle with industrial tofu",
+            label: "02 / SENSORY CONTRADICTION",
+            caption: "The central proposition pairs industrial tofu with an okara-scented candle: diners taste a standardized product while smelling the aroma removed by industrial processing.",
+            wide: true
+          },
+          {
+            src: "assets/projects/eating-future/process/okara-material-experiment.jpg",
+            alt: "Okara and paraffin material experiments",
+            label: "03 / MATERIAL EXPERIMENT",
+            caption: "Okara was dried, mixed with paraffin, heated, and cast to test whether soybean residue could hold its form and release aroma when warmed.",
+            wide: true
+          },
+          {
+            src: "assets/projects/eating-future/process/tableware-sketches.jpg",
+            alt: "Sketches exploring the relationship between candle, plate, and chopstick holder",
+            label: "04 / TABLEWARE SYSTEM",
+            caption: "The candle was developed as part of the tableware rather than as decoration. Plate, candle holder, and chopstick rest organize eating and smelling as one experience.",
+            wide: true
+          },
+          {
+            src: "assets/projects/eating-future/process/tableware-form-study.jpg",
+            alt: "Tableware and candle form studies drawn on paper",
+            label: "05 / FORM STUDY",
+            caption: "Geometric studies tested how a tofu-like candle could sit beside the plate while remaining visually connected to the rest of the dining set.",
+            wide: true
+          },
+          {
+            src: "assets/projects/eating-future/process/tableware-fabrication.jpg",
+            alt: "Sketch, candle test, 3D printing, and tableware mold fabrication",
+            label: "06 / PROTOTYPING",
+            caption: "Sketches moved into 3D-printed molds and physical tests, allowing the proportions, placement, and relationship between flame and tableware to be evaluated.",
+            wide: true
+          },
+          {
+            src: "assets/projects/eating-future/process/disseminating-machine-candle.jpg",
+            alt: "Lit tofu-shaped candle made with okara",
+            label: "07 / DISSEMINATING MACHINE",
+            caption: "Shaped like a block of tofu, the final candle returns discarded okara to the table as scent. Its flame makes an invisible loss in industrial food production perceptible.",
+            wide: true
+          }
         ]
       },
       {
