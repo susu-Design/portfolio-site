@@ -212,17 +212,14 @@ window.PROJECTS = [
         navLabel: "MACHINE",
         label: "PART 02 · DISSEMINATING MACHINE",
         title: "Eat industrial tofu. Smell what was discarded.",
-        copy: "Collected okara was refined into aromatic candles and a scent-diffusing machine. At dinner, bland mass-produced tofu is accompanied by the rich bean fragrance of its discarded by-product.",
-        imageAlt: "Okara material experiment and concept-development board",
+        copy: "Okara—the aromatic soybean pulp discarded by industrial production—was refined into a tofu-shaped candle and placed within a tableware system. Diners eat standardized tofu while breathing the fragrance of traditional tofu, turning lost flavor into a sensory contradiction.",
+        imageAlt: "Disseminating Machine tableware, okara material experiments, and tofu-shaped candle",
         images: [
-          "assets/projects/eating-future/process/how-5.jpg",
-          "assets/projects/eating-future/process/how-9.jpg",
-          "assets/projects/eating-future/process/how-10.jpg",
           "assets/projects/eating-future/process/how-11.jpg",
           "assets/projects/eating-future/process/how-12.jpg",
           "assets/projects/eating-future/process/how-13.jpg",
-          "assets/projects/eating-future/process/how-14.jpg",
-          "assets/projects/eating-future/process/how-15.jpg"
+          "assets/projects/eating-future/process/how-15.jpg",
+          "assets/projects/eating-future/process/disseminating-machine-candle.jpg"
         ]
       },
       {
@@ -230,34 +227,21 @@ window.PROJECTS = [
         navLabel: "THEATER",
         label: "PART 03 · THEATER OF FOOD",
         title: "What does food carry when Earth is far away?",
-        copy: "Set within the world of Alien, the project imagines new eating habits shaped by food and tableware. On a dark spacecraft, an ordinary soybean becomes a carrier of memory, culture, and human civilization.",
-        imageAlt: "Speculative dining research, sketch, and prototype board",
+        copy: "Reframed entirely inside the Alien universe, the project asks what food and tableware carry aboard the Nostromo. In the tension among humans, androids, and the alien, an ordinary soybean becomes a memory of Earth and a fragment of human civilization.",
+        imageAlt: "Alien universe world-building, speculative tableware sketches, and final dining artifact",
         images: [
-          "assets/projects/eating-future/process/what-if-8.jpg",
-          "assets/projects/eating-future/process/what-if-10.jpg",
-          "assets/projects/eating-future/process/what-if-11.jpg",
-          "assets/projects/eating-future/process/what-if-12.jpg",
-          "assets/projects/eating-future/process/what-if-13.jpg",
+          "assets/projects/eating-future/process/alien-world-01.jpg",
+          "assets/projects/eating-future/process/alien-world-02.jpg",
+          "assets/projects/eating-future/process/alien-world-03.jpg",
+          "assets/projects/eating-future/process/alien-world-04.jpg",
+          "assets/projects/eating-future/process/alien-world-05.jpg",
+          "assets/projects/eating-future/process/alien-world-06.jpg",
           "assets/projects/eating-future/process/what-if-15.jpg",
-          "assets/projects/eating-future/process/what-if-17.jpg",
           "assets/projects/eating-future/process/what-if-19.jpg",
           "assets/projects/eating-future/process/what-if-20.jpg",
           "assets/projects/eating-future/process/what-if-21.jpg",
           "assets/projects/eating-future/process/what-if-22.jpg",
-          "assets/projects/eating-future/process/what-if-23.jpg"
-        ]
-      },
-      {
-        id: "paradox",
-        navLabel: "SCENARIO",
-        label: "SPECULATIVE SCENARIO",
-        title: "A sensory contradiction, not a final solution.",
-        copy: "By placing familiar food in unfamiliar situations, the project makes industrialization's cultural consequences perceptible. Its purpose is to provoke discussion and help define the problem before attempting to solve it.",
-        imageAlt: "Final speculative food artifact and scenario",
-        images: [
-          "assets/projects/eating-future/process/paradox-machine-16.jpg",
-          "assets/projects/eating-future/process/paradox-machine-18.jpg",
-          "assets/projects/eating-future/process/paradox-machine-19.jpg",
+          "assets/projects/eating-future/process/what-if-23.jpg",
           "assets/projects/eating-future/process/paradox-alien-24.jpg",
           "assets/projects/eating-future/process/paradox-alien-25.jpg",
           "assets/projects/eating-future/process/paradox-alien-26.jpg"
