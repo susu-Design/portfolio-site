@@ -197,7 +197,9 @@ if (!project) {
   document.title = `${project.title} — Chang Su`;
   document.documentElement.dataset.theme = project.theme;
   const nextProject = projects[(projectIndex + 1) % projects.length];
-  if (project.layout === 'speculative-food') {
+  if (project.slug === 'wild-hybrid') {
+    main.innerHTML = wildHybridMarkup(project, nextProject);
+  } else if (project.layout === 'speculative-food') {
     main.innerHTML = speculativeFoodMarkup(project, nextProject);
   } else if (project.layout === 'notion-archive') {
     main.innerHTML = notionArchiveMarkup(project, nextProject);
