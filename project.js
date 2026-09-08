@@ -197,7 +197,11 @@ if (!project) {
   document.title = `${project.title} — Chang Su`;
   document.documentElement.dataset.theme = project.theme;
   const nextProject = projects[(projectIndex + 1) % projects.length];
-  if (project.slug === 'wild-hybrid') {
+  if (project.slug === 'good-vibez') {
+    main.innerHTML = goodVibezMarkup(project, nextProject);
+  } else if (project.slug === 'human-robot') {
+    main.innerHTML = humanRobotMarkup(project, nextProject);
+  } else if (project.slug === 'wild-hybrid') {
     main.innerHTML = wildHybridMarkup(project, nextProject);
   } else if (project.layout === 'speculative-food') {
     main.innerHTML = speculativeFoodMarkup(project, nextProject);
