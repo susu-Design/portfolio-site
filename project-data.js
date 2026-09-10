@@ -5,14 +5,143 @@ window.PROJECTS = [
     kicker: "MFA Thesis · Research through Design",
     category: "research",
     year: "2022",
-    status: "Academic research",
-    role: "Independent researcher & designer",
-    disciplines: ["RtD", "More-than-human design", "Critical making"],
-    summary: "A series of sensory wayfinding experiments that asks how GPS changes what we notice, trust, and understand about the environments through which we move.",
-    question: "If navigation were designed around smell, vibration, taste, weather, and the movements of other species, what forms of knowledge might become visible again?",
-    challenge: "Digital navigation efficiently moves a person from A to B, but often flattens place into a route and positions the human user as the only meaningful actor. This thesis reframed navigation as a relationship among bodies, technologies, materials, and environments.",
-    approach: "Using dérive, interviews, speculative design, and Research through Making, I created a sequence of small obstructions. Each prototype removed a familiar assumption—screen, map, human-centred cue—and introduced a different sensory or non-human signal.",
-    contribution: "I designed the research framework, conducted field inquiry, fabricated the sensory prototypes, facilitated participant encounters, and synthesized observations through posthuman and more-than-human design perspectives.",
+    status: "MFA Design thesis · CCA",
+    role: "Independent design researcher",
+    disciplines: ["Research through Design", "Psychogeography", "More-than-human inquiry"],
+    summary: "An MFA thesis using situated walking, sensory mapping, and speculative prototypes to investigate how GPS-based navigation reorganizes attention, memory, and agency in urban wayfinding.",
+    question: "How might design make environmental cues visible again, and what alternative forms of wayfinding emerge when navigation is redistributed across bodies, senses, technologies, and other species?",
+    researchFraming: {
+      abstractTitle: "Navigation is not only a route-finding problem.",
+      abstract: [
+        "This thesis investigates GPS navigation as a form of mediation: it does not simply represent the city, but privileges efficiency, visual instruction, and a precomputed route while backgrounding situated cues such as sound, smell, bodily orientation, weather, landmarks, and memory.",
+        "Rather than proposing a replacement for GPS, the research asks how design artifacts can interrupt this dominant model and make alternative relations with place available for inquiry. A portfolio of maps, sensor studies, and four cross-modal prototypes was developed to think through that question materially."
+      ],
+      methodology: [
+        {
+          label: "01 / Epistemic orientation",
+          title: "Research through Design",
+          copy: "Artifacts functioned as research propositions rather than finished solutions. Making, encountering, and revising them generated situated knowledge about what navigation could privilege beyond speed and accuracy."
+        },
+        {
+          label: "02 / Situated inquiry",
+          title: "Psychogeography",
+          copy: "Dérive-inspired walks and sensory maps examined how urban atmosphere, attention, memory, and environmental cues shape route choice. Because the inquiry used a repeated destination-led route, it is described as inspired by dérive rather than as a strict dérive."
+        },
+        {
+          label: "03 / Relational lens",
+          title: "More-than-human comparison",
+          copy: "Studies of bees, flies, and cats displaced the human pedestrian as the only model of navigation. Animal strategies were used as conceptual counter-models for sensing multiple cues, not as literal biological templates."
+        },
+        {
+          label: "04 / Material reasoning",
+          title: "Critical making",
+          copy: "Arduino, Processing, environmental sensors, and bodily interfaces made invisible signals discussable. Technical failure was treated as evidence: when screen-based visualization repeated the problem under critique, the inquiry moved toward embodied outputs."
+        }
+      ],
+      methods: [
+        {
+          number: "01",
+          title: "Literature and precedent review",
+          method: "Navigation history, GPS interfaces, desire lines, cognitive mapping, animal navigation, multisensory design, and sensory substitution were compared across design, geography, and biology.",
+          reason: "To challenge the assumption that navigation is synonymous with a visual route and establish alternative ways in which orientation knowledge is produced.",
+          decision: "Reframe the object of study from navigation software to the relationship among a moving body, environmental cues, and mediating tools.",
+          media: [
+            {
+              type: "image",
+              src: "assets/projects/navigation/research/animal-navigation-model.png",
+              alt: "Diagram comparing layered animal navigation cues",
+              caption: "Comparative model developed from the animal-navigation review. Multiple cues can cooperate or substitute for one another rather than resolve into a single visual instruction.",
+              fit: "contain"
+            }
+          ]
+        },
+        {
+          number: "02",
+          title: "Situated walking and sensory mapping",
+          method: "A recurring 15-minute route between home and CCA became a bounded field site. Photography, sound recording, landmark annotation, and layered maps documented moments of attention and familiarity.",
+          reason: "A repeated everyday route made subtle variations visible and connected abstract questions about digital mediation to embodied experience in place.",
+          decision: "Treat memory points, sound, architecture, and atmosphere as navigational evidence rather than incidental background.",
+          media: [
+            {
+              type: "image",
+              src: "assets/projects/navigation/research/situated-route-map.jpg",
+              alt: "Photographic route map between home and CCA",
+              caption: "The recurring route was reconstructed from street photographs, making remembered scenes and transitions visible alongside the route line.",
+              fit: "contain"
+            },
+            {
+              type: "image",
+              src: "assets/projects/navigation/research/sound-map-study.jpg",
+              alt: "Physical and photographic sound map of the field route",
+              caption: "Sound was mapped as spatial evidence through a cardboard terrain model, a photographic trace, and a continuous waveform.",
+              fit: "contain"
+            }
+          ]
+        },
+        {
+          number: "03",
+          title: "Route elicitation interviews",
+          method: "CCA students living nearby drew frequently used routes on tracing paper and explained why they selected them; the drawings were compared with the researcher’s own route records.",
+          reason: "Elicitation combined spatial traces with verbal accounts, revealing that apparently similar journeys could be organized by different personal cues and motives.",
+          decision: "Shift from searching for one optimal pedestrian route toward supporting personal, plural ways of constructing a path.",
+          media: [
+            {
+              type: "image",
+              src: "assets/projects/navigation/research/route-elicitation.jpg",
+              alt: "A participant route drawn on tracing paper",
+              caption: "Tracing paper separated the participant's recalled path from the official map, allowing personal cues and route logic to be discussed without treating GPS as the answer key.",
+              fit: "contain"
+            }
+          ]
+        },
+        {
+          number: "04",
+          title: "Iterative sensor and material experiments",
+          method: "Light, sound, odor, and heart-rate sensors were tested with Arduino and Processing before cues were translated into vibration, taste, visible traces, and amplified sound.",
+          reason: "Prototyping tested both what could be sensed and whether the form of translation reinforced or disrupted screen-centered navigation.",
+          decision: "Abandon visual data display as the main outcome and develop four embodied, cross-modal provocations.",
+          media: [
+            {
+              type: "image",
+              src: "assets/projects/navigation/research/sensor-prototype.jpg",
+              alt: "Wearable vibration prototype connected to an Arduino board",
+              caption: "Early wearable testing translated sensed signals into vibration at the foot, relocating navigation feedback from the screen to the body."
+            },
+            {
+              type: "video",
+              src: "assets/projects/navigation/research/sensor-experiment.mp4",
+              caption: "Process clip: environmental sensors were combined and tested before the project moved from visualized data toward cross-modal outputs."
+            }
+          ]
+        }
+      ],
+      decisions: [
+        ["Repeated routes were remembered through landmarks, sounds, and personal associations.", "Navigation was reframed as situated knowledge rather than route compliance."],
+        ["Participants described different reasons for choosing paths that appeared geographically similar.", "The design objective shifted from universal optimization to plural and personally constructed routes."],
+        ["Sensors captured environmental variation, but Processing returned it to another screen.", "The prototypes moved from visualization toward taste, vibration, trace, and amplified sound."],
+        ["Animal navigation literature described orientation through multiple, substitutable cues.", "Animal strategies became a heuristic for diversifying interaction, not a claim that human and animal perception are equivalent."]
+      ],
+      contributions: [
+        {
+          label: "Conceptual contribution",
+          copy: "The thesis proposes navigation as a distributed relation among bodies, memories, environmental signals, and technical systems—not a neutral instruction delivered by an interface."
+        },
+        {
+          label: "Methodological contribution",
+          copy: "It develops sensory obstruction as a mode of inquiry: selectively removing the route map and translating overlooked cues so that the values embedded in navigation can be examined."
+        },
+        {
+          label: "Artifact contribution",
+          copy: "The four prototypes form an annotated research portfolio. Together they compare different sensory translations rather than presenting one product as the definitive answer."
+        }
+      ],
+      researcherRole: "As the independent researcher and designer, I framed the question, reviewed cross-disciplinary literature, defined the field site, conducted situated observations and route-elicitation conversations, built and revised the prototypes, documented encounters, and synthesized the resulting conceptual and material insights.",
+      limitations: "This is an exploratory, practice-based thesis grounded in one recurring urban route and a small convenience sample. The animal studies inform speculative comparison rather than biological validation, and the artifacts were not evaluated as reliable navigation aids. The claims are therefore provisional: they identify a design space and a method for investigating it, not a generalizable replacement for GPS.",
+      references: {
+        project: "John Edward Huth, The Lost Art of Finding Our Way (2013); Tom McDonough, The Situationists and the City (2010); Denis Wood, Lynch Debord: About Two Psychogeographies (2010); Ellen Lupton and Andrea Lipps, The Senses: Design Beyond Vision (2018); Nathan F. Putman, Animal Navigation: What Is Truth? (2021); Kevin Slavin, Design as Participation (2016); Peter B. L. Meijer and Jamie Ward on sensory substitution and artificial synesthesia.",
+        method: "Methodological framing: Zimmerman, Forlizzi, and Evenson, Research through Design (2007); William Gaver, What Should We Expect from Research through Design? (2012); Ron Wakkary, Things We Could Design (2021)."
+      }
+    },
     outcome: "The prototypes made normally backgrounded environmental cues tangible. Participants relied on bodily memory, negotiated uncertainty, and discussed how navigation technologies distribute agency rather than simply deliver directions.",
     reflection: "The work argues that navigation is never neutral: every interface prioritizes particular worlds and ways of knowing. Design can expose those values and create room for human and non-human actors to be perceived differently.",
     cover: "assets/projects/navigation/chang-su-beeline-cover.jpg",
@@ -357,11 +486,11 @@ window.PROJECTS = [
     year: "2021",
     status: "Team project",
     role: "Experience designer & researcher",
-    disciplines: ["Mixed methods", "5E experience model", "Service prototyping"],
+    disciplines: ["Exploratory qualitative research", "5E experience mapping", "Service prototyping"],
     summary: "A divination-themed pop-up store designed to make intimate-product shopping more private, safe, social, and personally meaningful.",
     question: "How can a retail experience reduce embarrassment and uncertainty while supporting curiosity, consent, customization, and community?",
     challenge: "Intimate-product retail combines practical questions with strong social and cultural pressures. Customers need trustworthy information and privacy, but may also seek discovery and connection.",
-    approach: "The team combined San Francisco retail fieldwork, cross-cultural questionnaires, interviews, journey mapping, touchpoint design, and prototype testing. The 5E model structured the experience from enticement through extension.",
+    approach: "The team triangulated comparative retail observation, a cross-cultural scoping questionnaire, guided qualitative interviews, and dimension mapping. Findings became explicit service criteria, while the 5E framework structured how those criteria operated from invitation through follow-up.",
     contribution: "I contributed to discovery research, synthesis, concept development, journey construction, and the translation of findings into spatial and service touchpoints.",
     outcome: "The team tested a speakeasy direction, then shifted to a retail store with membership events. A horoscope-themed micropilot and final pop-up explored guided discovery, privacy, and personalized service.",
     reflection: "Privacy is not simply isolation. In service design it can be created through pacing, codes of conduct, controlled disclosure, and meaningful choices about when and how to interact.",

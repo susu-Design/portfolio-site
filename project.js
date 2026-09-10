@@ -47,6 +47,54 @@ function thesisMediaMarkup(item) {
   </section>`;
 }
 
+function researchFramingMarkup(item) {
+  const framing = item.researchFraming;
+  if (!framing) return '';
+  const methodology = framing.methodology.map((entry) => `<article><span>${entry.label}</span><h3>${entry.title}</h3><p>${entry.copy}</p></article>`).join('');
+  const methods = framing.methods.map((entry) => {
+    const media = (entry.media || []).map((asset) => {
+      const visual = asset.type === 'video'
+        ? `<video controls playsinline preload="metadata" aria-label="${asset.caption}"><source src="${asset.src}" type="video/mp4">Your browser does not support embedded video.</video>`
+        : `<img src="${asset.src}" alt="${asset.alt}" loading="lazy">`;
+      return `<figure class="navigation-method-asset${asset.fit === 'contain' ? ' is-contain' : ''}${asset.type === 'video' ? ' is-video' : ''}">${visual}<figcaption>${asset.caption}</figcaption></figure>`;
+    }).join('');
+    return `<li><span>${entry.number}</span><div><h3>${entry.title}</h3><p>${entry.method}</p></div><div><small>Why this method</small><p>${entry.reason}</p></div><div><small>Decision produced</small><p>${entry.decision}</p></div>${media ? `<div class="navigation-method-media media-${entry.media.length}">${media}</div>` : ''}</li>`;
+  }).join('');
+  const decisions = framing.decisions.map(([evidence, decision]) => `<tr><td>${evidence}</td><td>${decision}</td></tr>`).join('');
+  const contributions = framing.contributions.map((entry) => `<article><span>${entry.label}</span><p>${entry.copy}</p></article>`).join('');
+  return `<section class="question-section navigation-question">
+      <div class="section-index">01 / Research proposition</div>
+      <blockquote>${item.question}</blockquote>
+    </section>
+
+    <section class="navigation-abstract" aria-labelledby="navigation-abstract-title">
+      <header><p class="eyebrow">Thesis abstract</p><h2 id="navigation-abstract-title">${framing.abstractTitle}</h2></header>
+      <div>${framing.abstract.map((paragraph) => `<p>${paragraph}</p>`).join('')}</div>
+    </section>
+
+    <section class="navigation-methodology" aria-labelledby="navigation-methodology-title">
+      <header class="navigation-research-heading"><p class="eyebrow">Methodology</p><h2 id="navigation-methodology-title">Knowledge through situated making.</h2><p>The methodology connects critical interpretation with material inquiry. Theory oriented what to notice; field methods situated the question; prototypes made competing forms of navigation available for reflection.</p></header>
+      <div class="navigation-methodology-grid">${methodology}</div>
+    </section>
+
+    <section class="navigation-methods" aria-labelledby="navigation-methods-title">
+      <header class="navigation-research-heading"><p class="eyebrow">Methods and decisions</p><h2 id="navigation-methods-title">A traceable research design.</h2><p>Each method had a distinct role in the inquiry and produced a decision that changed the next stage.</p></header>
+      <ol>${methods}</ol>
+    </section>
+
+    <section class="navigation-decisions" aria-labelledby="navigation-decisions-title">
+      <header><p class="eyebrow">Analytical synthesis</p><h2 id="navigation-decisions-title">Evidence changed the inquiry.</h2></header>
+      <div class="navigation-decision-table" role="region" aria-label="Evidence and resulting research decisions" tabindex="0"><table><thead><tr><th scope="col">Evidence or tension</th><th scope="col">Research decision</th></tr></thead><tbody>${decisions}</tbody></table></div>
+    </section>
+
+    <section class="navigation-contribution" aria-labelledby="navigation-contribution-title">
+      <header class="navigation-research-heading"><p class="eyebrow">Research contribution</p><h2 id="navigation-contribution-title">A proposition, a method, and a portfolio of artifacts.</h2></header>
+      <div class="navigation-contribution-grid">${contributions}</div>
+      <div class="navigation-accountability"><article><span>Researcher role</span><p>${framing.researcherRole}</p></article><article><span>Scope and limitations</span><p>${framing.limitations}</p></article></div>
+      <div class="navigation-references"><p><span>Sources used in the original inquiry</span>${framing.references.project}</p><p><span>Research framing used in this portfolio</span>${framing.references.method}</p></div>
+    </section>`;
+}
+
 function speculativeFoodMarkup(item, nextItem) {
   const chapters = item.chapters || [];
   const chapterMarkup = chapters.map((chapter) => {
@@ -211,6 +259,20 @@ if (!project) {
   const heroVisual = project.cover
     ? `<figure class="hero-media${project.coverFit === 'contain' ? ' media-contain' : ''}"><img src="${project.cover}" alt="Cover image for ${project.title}"></figure>`
     : abstractVisual(project.visual, project.title);
+  const framingMarkup = project.researchFraming ? researchFramingMarkup(project) : `
+      <section class="question-section">
+        <div class="section-index">01 / Framing</div>
+        <blockquote>${project.question}</blockquote>
+      </section>
+
+      <section class="narrative-grid">
+        <div class="narrative-heading"><p class="eyebrow">From context to consequence</p><h2>Design decisions, not just outcomes.</h2></div>
+        <div class="narrative-body">
+          <section><span>Challenge</span><p>${project.challenge}</p></section>
+          <section><span>Approach</span><p>${project.approach}</p></section>
+          <section><span>My contribution</span><p>${project.contribution}</p></section>
+        </div>
+      </section>`;
 
   main.innerHTML = `
     <article>
@@ -232,23 +294,11 @@ if (!project) {
 
       ${project.confidential ? `<aside class="confidential-note"><span>Confidentiality note</span><p>Only approved, non-sensitive information is shown. Abstract graphics indicate the design territory without reproducing unreleased product imagery.</p></aside>` : ''}
 
-      <section class="question-section">
-        <div class="section-index">01 / Framing</div>
-        <blockquote>${project.question}</blockquote>
-      </section>
-
-      <section class="narrative-grid">
-        <div class="narrative-heading"><p class="eyebrow">From context to consequence</p><h2>Design decisions, not just outcomes.</h2></div>
-        <div class="narrative-body">
-          <section><span>Challenge</span><p>${project.challenge}</p></section>
-          <section><span>Approach</span><p>${project.approach}</p></section>
-          <section><span>My contribution</span><p>${project.contribution}</p></section>
-        </div>
-      </section>
+      ${framingMarkup}
 
       ${thesisMediaMarkup(project)}
 
-      ${galleryMarkup(project.gallery, project.thesisBook ? '03' : '02')}
+      ${project.slug === 'navigation' ? '' : galleryMarkup(project.gallery, project.thesisBook ? '03' : '02')}
 
       <section class="result-section">
         <div><span>Outcome</span><p>${project.outcome}</p></div>

@@ -30,29 +30,44 @@ function goodVibezMarkup(item, nextItem) {
     </section>
     <nav class="gv-nav" aria-label="Good Vibez project sections"><a href="#gv-discovery">01 / Research</a><a href="#gv-concepts">02 / Concepts</a><a href="#gv-prototypes">03 / Prototypes</a><a href="#gv-pilot">04 / Micropilot</a><a href="#gv-pop-up">05 / Pop-up</a><a href="#gv-learning">06 / Learning</a></nav>
 
-    <section class="gv-section">
-      ${head('gv-discovery','01 / Research','Privacy, stigma and the reasons to visit','The inquiry began with retail observation and consumer research, then narrowed the design space through interviews and dimension mapping.')}
-      <div class="gv-methods">
-        <article><h3>Retail observation</h3><p>San Francisco store visits examined business models, service strategies and the steps that shape a shopping visit.</p></article>
-        <article><h3>Cross-cultural inquiry</h3><p>Questionnaires explored attitudes across cultural backgrounds; interviews investigated comfort, expectations and unmet needs.</p></article>
-        <article><h3>Interview synthesis</h3><p>Five people recruited through personal networks took part in hour-long interviews; individual patterns and outliers were compared as a team.</p></article>
+    <section class="gv-section gv-research">
+      ${head('gv-discovery','01 / Research','From situated evidence to service criteria','This exploratory, qualitative-led study treated intimate-product shopping as an end-to-end service rather than a shelf-level purchase. We combined contextual comparison, a scoping questionnaire and five guided interviews, then translated recurring patterns and differences into experience criteria.')}
+      <div class="gv-research-position">
+        <article><span>Research stance</span><h3>Explore before defining</h3><p>We began with hypotheses about stigma, everyday ritual and cultural influence, but used field and participant evidence to revise the problem rather than confirm an assumed solution.</p></article>
+        <article><span>Service-design lens</span><h3>Study the connected system</h3><p>People, staff behavior, spatial thresholds, information, objects and follow-up were examined as interdependent touchpoints—not as separate design problems.</p></article>
+        <article><span>Experience-design lens</span><h3>Follow the participant over time</h3><p>The unit of analysis extended from deciding whether to visit through arrival, exploration, purchase and return, making transitions and emotional conditions visible.</p></article>
       </div>
-      <p class="gv-inline"><strong>Starting hypotheses.</strong> Everyday rituals might reduce stigma; stigma could inhibit purchase; cultural upbringing might shape expectations.</p>
-      <p class="gv-note">Exploratory interviews: five participants, aged 24–31; three women and two men, with Latino, Asian and Caucasian backgrounds. Findings describe this sample. Earlier questionnaires and store visits are documented in Notion, without raw responses in the deck.</p>
-      <div class="gv-subhead"><h3>Mapping the design space</h3><p>People, places, objects, activities, rules and relationships made the retail experience available for comparison.</p></div>
+
+      <div class="gv-subhead"><h3>Why these methods</h3><p>Each method answered a different question. Their value came from triangulation: comparing what the retail environment made possible, what participants said, and how the team interpreted patterns.</p></div>
+      <div class="gv-methods gv-method-ledger">
+        <article><span>01 / Context</span><h3>Comparative retail observation</h3><p><strong>Method.</strong> Visits to San Francisco stores documented business models, service strategies and the sequence of a visit.</p><p><strong>Why.</strong> The environment and staff interactions reveal frontstage conditions that interview recall alone can miss.</p><p><strong>Decision.</strong> Treat the invitation, entrance and choice of assistance as part of privacy—not merely the interior layout.</p></article>
+        <article><span>02 / Breadth</span><h3>Cross-cultural scoping</h3><p><strong>Method.</strong> An exploratory questionnaire asked how attitudes might vary with participants’ cultural backgrounds.</p><p><strong>Why.</strong> It challenged the assumption that embarrassment, openness and preferred social contact have one shared meaning.</p><p><strong>Decision.</strong> Avoid one prescribed journey; preserve choices to browse alone, with a partner or with staff support.</p></article>
+        <article><span>03 / Depth</span><h3>Guided qualitative interviews</h3><p><strong>Method.</strong> Five participants recruited through personal networks joined one-hour interviews using a team-developed guide.</p><p><strong>Why.</strong> A sensitive topic required first-person accounts of motivation, discomfort, trust and prior shopping experiences.</p><p><strong>Decision.</strong> Prioritize discretion, useful information, non-pressured guidance and a credible reason to visit in person.</p></article>
+        <article><span>04 / Analysis</span><h3>Cross-case synthesis</h3><p><strong>Method.</strong> Researchers recorded patterns and outliers individually, then compared them as a team through dimension mapping.</p><p><strong>Why.</strong> Looking across cases retained disagreement while converting qualitative material into explicit design criteria.</p><p><strong>Decision.</strong> Make privacy a condition across the journey, while testing social interaction as optional rather than compulsory.</p></article>
+      </div>
+      <div class="gv-method-boundary"><span>Scope of claims</span><p>The five interviews were an exploratory convenience sample: ages 24–31, three women and two men, with Latino, Asian and Caucasian backgrounds. They generated directions for design and testing; they do not represent demographic groups. The questionnaire and store visits are documented in the project archive, but their raw records are not available here, so no statistical claims are made.</p></div>
+
+      <div class="gv-subhead"><h3>Making the design space discussable</h3><p>Dimension mapping externalized early assumptions about people, places and objects. Revising the axes made it possible to see privacy as a relational condition spanning the whole service.</p></div>
       ${gallery([['dimensions-overview','Initial inventory of the people, activities and relationships around shopping.'],['dimensions-objects','Object dimensions: discreet / obvious and intimate / BDSM.'],['dimensions-place','Place dimensions, including public / private and visiting alone / with company.'],['dimensions-people','People dimensions, including confidence, experience and familiarity.']], 'gv-four gv-boards')}
-      ${rows(['Initial framework','Framework after discovery','Design focus'],[['Shy / confident<br>Intimate / BDSM','Reality / fantasy<br>Familiar / adventurous','Privacy becomes the central concern across the experience.']])}
-      <div class="gv-subhead"><h3>What the interviews changed</h3></div>
+      ${rows(['Initial assumption','Reframed dimensions','Research criterion'],[['Shy / confident<br>Intimate / BDSM','Reality / fantasy<br>Familiar / adventurous','Privacy must be supported before, during and after the visit.']])}
+      <div class="gv-subhead"><h3>How evidence changed the brief</h3><p>Interview material was not presented as a list of opinions. Each pattern was interpreted for its consequence across the service.</p></div>
       <blockquote class="gv-quote">“Everytime I double check no one’s watching before walking in.”<cite>Anonymous discovery interview excerpt · Process deck, p. 19</cite></blockquote>
-      ${rows(['Interview finding','Implication for the experience'],[
-        ['Privacy starts before entry','The arrival and invitation matter as much as the space inside.'],
-        ['Online shopping offers information, reviews and comfort','A physical visit needs useful guidance and a reason to leave the convenience of home.'],
-        ['A party-like visit felt normal and less anxious','Explore optional social interaction as an alternative to an intimidating sales encounter.'],
-        ['Purchases were described as occasional, around once or twice a year','Explore recurring events and membership as reasons to return between purchases.'],
-        ['Instagram appeared as a product-discovery channel','Include digital discovery and follow-up in the service journey.'],
-        ['Partners motivated some purchases, while participants differed in shopping alone or together','Provide multiple ways to participate rather than assuming every visitor wants company.']
+      ${rows(['Evidence pattern','Interpretation','Design decision'],[
+        ['Participants checked whether anyone was watching before entry.','Privacy begins at the threshold, before a customer reaches a product.','Design the invitation and arrival as deliberately as the room inside.'],
+        ['Online stores offered information, reviews and control.','A physical store must provide value beyond access to merchandise.','Combine trustworthy guidance with an experience worth leaving home for.'],
+        ['A party-like store visit was recalled as normalizing and low-anxiety.','Sociality can reduce discomfort when it is invitational rather than required.','Prototype optional conversation and guided discovery alongside independent browsing.'],
+        ['Purchases were occasional, while discovery also happened through Instagram.','The relationship begins before a visit and can continue between purchases.','Explore events, membership and digital follow-up as an extended service.'],
+        ['Participants differed in whether they shopped alone, with partners or with assistance.','A single scripted mode would reproduce assumptions about confidence and intimacy.','Let visitors control disclosure, company and the level of staff involvement.']
       ])}
       ${decision('First design question','How might we create a personal and intimate space for customers to explore their sexual desires?')}
+      <div class="gv-subhead gv-5e-intro"><h3>From research criteria to the 5E journey</h3><p>The 5E framework was used after discovery as an experience-mapping scaffold—not as a data-collection method. It kept the design focused on the participant’s full journey and exposed where different service touchpoints had to work together.</p></div>
+      <ol class="gv-5e-model">
+        <li><span>01</span><strong>Entice</strong><p>Set expectations before the visit.</p></li>
+        <li><span>02</span><strong>Enter</strong><p>Make the threshold legible and safe.</p></li>
+        <li><span>03</span><strong>Engage</strong><p>Support exploration, choice and interaction.</p></li>
+        <li><span>04</span><strong>Exit</strong><p>Close the visit with discretion and care.</p></li>
+        <li><span>05</span><strong>Extend</strong><p>Continue learning and connection afterward.</p></li>
+      </ol>
     </section>
 
     <section class="gv-section">
@@ -152,7 +167,7 @@ function goodVibezMarkup(item, nextItem) {
       <div class="gv-credit"><h3>Team Good Vibez</h3><p>Danielle Brown, Bess Hernreich, Laura Loáiciga, Chang Su and Hank Yao. Research, concepts and prototype work were collaborative; the final service roles appear in the 5E journey above.</p></div>
     </section>
 
-    <section class="gv-sources"><h2>Project archive</h2><div><a href="${item.source}" target="_blank" rel="noreferrer">Notion / narrative and references ↗</a><a href="${root}good-vibez-process.pdf" target="_blank" rel="noreferrer">Full process / 98 pages ↗</a></div><p>Research, prototypes and feedback: the team’s process summary, Discovery Research R2 and Concept Shaping R3. Full methodology and references remain available in the archive.</p></section>
+    <section class="gv-sources"><h2>Project archive</h2><div><a href="${item.source}" target="_blank" rel="noreferrer">Notion / narrative and references ↗</a><a href="${root}good-vibez-process.pdf" target="_blank" rel="noreferrer">Full process / 98 pages ↗</a></div><p>Research, prototypes and feedback: the team’s process summary, Discovery Research R2 and Concept Shaping R3. Full methodology and original project references remain available in the archive.</p><p class="gv-method-references">Methodological framing: <a href="https://www.service-design-network.org/" target="_blank" rel="noreferrer">Service Design Network ↗</a> · <a href="https://id.iit.edu/resource-library/glossary/what-is-the-5e-framework/" target="_blank" rel="noreferrer">Institute of Design, 5E Framework ↗</a> · <a href="https://coniferresearch.com/5e-framework/" target="_blank" rel="noreferrer">Conifer Research, 5E Experience Map ↗</a> · <a href="https://www.nngroup.com/articles/research-journey-mapping/" target="_blank" rel="noreferrer">NN/g, research for journey mapping ↗</a></p></section>
     <a class="next-project" href="project.html?project=${nextItem.slug}"><span>Next project</span><strong>${nextItem.title}</strong><i>→</i></a>
   </article>`;
 }

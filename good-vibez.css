@@ -19,8 +19,26 @@
 .gv-heading>span { padding-top:8px; }
 .gv-heading h2 { font-size:clamp(30px,3.2vw,46px); line-height:1.08; letter-spacing:-.04em; margin:0 0 14px; }
 .gv-heading p { font-size:15px; max-width:840px; margin:0; color:#57544e; }
-.gv-methods { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:28px; margin:24px 0; }
+.gv-research-position { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1px; margin:4px 0 38px; background:var(--line); border-block:1px solid var(--line); }
+.gv-research-position article { padding:24px 26px 26px 0; background:var(--paper); }
+.gv-research-position article+article { padding-left:26px; }
+.gv-research-position span,.gv-method-ledger>article>span,.gv-method-boundary>span { display:block; color:var(--gv-red); font-size:12px; text-transform:uppercase; letter-spacing:.08em; margin-bottom:12px; }
+.gv-research-position h3 { font-size:20px; margin-bottom:9px; }
+.gv-research-position p { color:#57544e; font-size:14px; margin:0; }
+.gv-methods { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1px; margin:24px 0; background:var(--line); border:1px solid var(--line); }
+.gv-method-ledger article { padding:25px 28px 26px; background:#f3efe7; }
+.gv-method-ledger h3 { font-size:21px; margin-bottom:18px; }
+.gv-method-ledger p+p { margin-top:12px; }
+.gv-method-ledger strong { font-weight:500; color:var(--ink); }
 .gv-methods p { font-size:14px; margin:0; }
+.gv-method-boundary { display:grid; grid-template-columns:150px minmax(0,850px); gap:24px; padding:18px 0 0; }
+.gv-method-boundary p { color:#656159; font-size:12px; margin:0; }
+.gv-5e-intro { max-width:1000px; }
+.gv-5e-model { list-style:none; display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:1px; padding:0; margin:22px 0 0; background:var(--line); border:1px solid var(--line); }
+.gv-5e-model li { min-width:0; padding:20px; background:#f3efe7; }
+.gv-5e-model li>span { display:block; color:var(--gv-red); font-size:12px; letter-spacing:.08em; margin-bottom:18px; }
+.gv-5e-model strong { display:block; font:21px/1.2 Georgia,serif; }
+.gv-5e-model p { color:#57544e; font-size:12px; margin:10px 0 0; }
 .gv-note { font-size:12px; color:#656159; margin:15px 0; max-width:1000px; }
 .gv-inline { font-size:14px; max-width:1000px; margin:22px 0; }
 .gv-inline strong { font-weight:500; color:var(--ink); }
@@ -76,18 +94,23 @@
 .gv-sources { padding:40px var(--pad); }
 .gv-sources h2 { font-size:30px; letter-spacing:-.035em; }
 .gv-sources>div { display:flex; flex-wrap:wrap; gap:22px; font-size:14px; }
-.gv-sources>p:last-of-type { max-width:980px; font-size:12px; color:#656159; }
+.gv-sources>p { max-width:980px; font-size:12px; color:#656159; }
+.gv-method-references a { text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:3px; }
 .gv-case a:focus-visible,.gv-table-wrap:focus-visible { outline:2px solid var(--gv-red); outline-offset:4px; }
 @media(max-width:1000px) {
- .gv-heading { grid-template-columns:120px minmax(0,1fr); }
+ .gv-heading,.gv-method-boundary { grid-template-columns:120px minmax(0,1fr); }
  .gv-four { grid-template-columns:repeat(2,minmax(0,1fr)); }
  .gv-six { grid-template-columns:repeat(3,minmax(0,1fr)); }
+ .gv-5e-model { grid-template-columns:repeat(5,minmax(145px,1fr)); overflow-x:auto; }
  .gv-final-scenes> .gv-figure img { height:570px; } .gv-final-scenes>div img { height:250px; }
 }
 @media(max-width:700px) {
  .gv-hero { grid-template-columns:1fr; gap:24px; padding-top:34px; }
  .gv-hero h1 { font-size:80px; } .gv-subtitle { font-size:26px; }
- .gv-facts,.gv-methods,.gv-heading,.gv-concepts,.gv-prototype-pair,.gv-pilot-build,.gv-decision,.gv-credit,.gv-final-scenes { grid-template-columns:1fr; gap:22px; }
+ .gv-facts,.gv-methods,.gv-heading,.gv-concepts,.gv-prototype-pair,.gv-pilot-build,.gv-decision,.gv-credit,.gv-final-scenes,.gv-research-position,.gv-method-boundary { grid-template-columns:1fr; gap:22px; }
+ .gv-research-position { gap:1px; }
+ .gv-research-position article,.gv-research-position article+article { padding:22px 0; }
+ .gv-method-ledger { gap:1px; }
  .gv-heading { gap:10px; } .gv-heading h2 { font-size:32px; }
  .gv-section { padding:35px 0; } .gv-nav { gap:16px 24px; }
  .gv-three,.gv-six { grid-template-columns:repeat(2,minmax(0,1fr)); }
