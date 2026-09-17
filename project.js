@@ -245,7 +245,9 @@ if (!project) {
   document.title = `${project.title} — Chang Su`;
   document.documentElement.dataset.theme = project.theme;
   const nextProject = projects[(projectIndex + 1) % projects.length];
-  if (project.slug === 'good-vibez') {
+  if (typeof huaweiCases !== 'undefined' && huaweiCases[project.slug]) {
+    main.innerHTML = huaweiMarkup(project, nextProject);
+  } else if (project.slug === 'good-vibez') {
     main.innerHTML = goodVibezMarkup(project, nextProject);
   } else if (project.slug === 'human-robot') {
     main.innerHTML = humanRobotMarkup(project, nextProject);
