@@ -73,7 +73,7 @@ function researchFramingMarkup(item) {
     </section>
 
     <section class="navigation-methodology" aria-labelledby="navigation-methodology-title">
-      <header class="navigation-research-heading"><p class="eyebrow">Methodology</p><h2 id="navigation-methodology-title">Knowledge through situated making.</h2><p>The methodology connects critical interpretation with material inquiry. Theory oriented what to notice; field methods situated the question; prototypes made competing forms of navigation available for reflection.</p></header>
+      <header class="navigation-research-heading"><p class="eyebrow">Methodology</p><h2 id="navigation-methodology-title">From questioning routes to exploring other senses.</h2><p>Speculative design and Situationist ideas shaped the starting question. Walking and making developed it; animal-navigation comparisons introduced a further perspective within the practice.</p></header>
       <div class="navigation-methodology-grid">${methodology}</div>
     </section>
 
@@ -162,7 +162,7 @@ function speculativeFoodMarkup(item, nextItem) {
       const caption = entry.caption
         ? `<figcaption><span>${entry.label || String(index + 1).padStart(2, '0')}</span><p>${entry.caption}</p></figcaption>`
         : '';
-      return `<figure class="food-process-image${isWide ? ' is-wide' : ''}${entry.featured ? ' is-featured' : ''}${entry.layout ? ` is-${entry.layout}` : ''}">${media}${caption}</figure>`;
+      return `<figure class="food-process-image${isWide ? ' is-wide' : ''}${entry.featured ? ' is-featured' : ''}${entry.layout ? ` is-${entry.layout}` : ''}">${caption}${media}</figure>`;
     }).join('');
     return `<section class="food-chapter chapter-${chapter.id}" id="${chapter.id}">
       <header class="food-chapter-heading">

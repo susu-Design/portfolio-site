@@ -7,35 +7,35 @@ window.PROJECTS = [
     year: "2022",
     status: "MFA Design thesis · CCA",
     role: "Independent design researcher",
-    disciplines: ["Research through Design", "Psychogeography", "More-than-human inquiry"],
+    disciplines: ["Speculative Design", "Research through Design", "Psychogeography"],
     summary: "An MFA thesis using situated walking, sensory mapping, and speculative prototypes to investigate how GPS-based navigation reorganizes attention, memory, and agency in urban wayfinding.",
-    question: "How might design make environmental cues visible again, and what alternative forms of wayfinding emerge when navigation is redistributed across bodies, senses, technologies, and other species?",
+    question: "What does navigation overlook when a journey becomes the fastest route from A to B—and how might design open up other ways of experiencing and finding our way through the city?",
     researchFraming: {
       abstractTitle: "Navigation is not only a route-finding problem.",
       abstract: [
-        "This thesis investigates GPS navigation as a form of mediation: it does not simply represent the city, but privileges efficiency, visual instruction, and a precomputed route while backgrounding situated cues such as sound, smell, bodily orientation, weather, landmarks, and memory.",
-        "Rather than proposing a replacement for GPS, the research asks how design artifacts can interrupt this dominant model and make alternative relations with place available for inquiry. A portfolio of maps, sensor studies, and four cross-modal prototypes was developed to think through that question materially."
+        "Developed during my MFA, this thesis brought speculative design and design fiction into dialogue with my study of the Situationist International, psychogeography, and dérive. These starting points informed a question about navigation technology: how do predefined routes, selected information, and the priority given to efficiency shape our experience of the city?",
+        "Walking, sensory mapping, and prototyping explored what an A-to-B route leaves out. During this inquiry, I introduced comparisons with animal navigation to imagine other ways of attending to environmental cues. This was an exploratory move within the design practice, not a conclusion derived from Situationist theory. Maps, sensor studies, and four cross-modal prototypes made these alternatives tangible."
       ],
       methodology: [
         {
           label: "01 / Epistemic orientation",
-          title: "Research through Design",
-          copy: "Artifacts functioned as research propositions rather than finished solutions. Making, encountering, and revising them generated situated knowledge about what navigation could privilege beyond speed and accuracy."
+          title: "Speculative Design / Design Fiction",
+          copy: "Speculative artifacts and imagined situations opened up alternatives to efficient route-following. Working through design allowed me to explore what navigation might prioritize if speed and accuracy were no longer its only measures of value."
         },
         {
           label: "02 / Situated inquiry",
-          title: "Psychogeography",
-          copy: "Dérive-inspired walks and sensory maps examined how urban atmosphere, attention, memory, and environmental cues shape route choice. Because the inquiry used a repeated destination-led route, it is described as inspired by dérive rather than as a strict dérive."
+          title: "Psychogeography and dérive",
+          copy: "My engagement with Situationist ideas informed attention to urban atmosphere and a questioning of prescribed movement. Walks and sensory maps examined memory, attention, and route choice. The recurring home-to-CCA route remained destination-led, so these experiments were inspired by dérive rather than a strict enactment of it."
         },
         {
-          label: "03 / Relational lens",
-          title: "More-than-human comparison",
-          copy: "Studies of bees, flies, and cats displaced the human pedestrian as the only model of navigation. Animal strategies were used as conceptual counter-models for sensing multiple cues, not as literal biological templates."
+          label: "03 / Exploratory comparison",
+          title: "Learning from animal navigation",
+          copy: "Comparisons with bees, flies, and cats introduced a multi-species perspective during the inquiry. Different sensory strategies made familiar assumptions about navigation appear less inevitable. This design exploration extended the question beyond its Situationist starting point; it did not follow automatically from that theory."
         },
         {
           label: "04 / Material reasoning",
-          title: "Critical making",
-          copy: "Arduino, Processing, environmental sensors, and bodily interfaces made invisible signals discussable. Technical failure was treated as evidence: when screen-based visualization repeated the problem under critique, the inquiry moved toward embodied outputs."
+          title: "Research through Design",
+          copy: "Making and revising prototypes helped develop the inquiry. Arduino, Processing, environmental sensors, and bodily interfaces made overlooked signals tangible. When screen-based visualization repeated the model I was questioning, I moved toward sensory outputs experienced through the body."
         }
       ],
       methods: [
@@ -44,13 +44,13 @@ window.PROJECTS = [
           title: "Literature and precedent review",
           method: "Navigation history, GPS interfaces, desire lines, cognitive mapping, animal navigation, multisensory design, and sensory substitution were compared across design, geography, and biology.",
           reason: "To challenge the assumption that navigation is synonymous with a visual route and establish alternative ways in which orientation knowledge is produced.",
-          decision: "Reframe the object of study from navigation software to the relationship among a moving body, environmental cues, and mediating tools.",
+          decision: "Use animal navigation as an exploratory comparison: ask which cues become relevant when the sensory perspective changes, then translate selected possibilities into human sensory prototypes.",
           media: [
             {
               type: "image",
               src: "assets/projects/navigation/research/animal-navigation-model.png",
               alt: "Diagram comparing layered animal navigation cues",
-              caption: "Comparative model developed from the animal-navigation review. Multiple cues can cooperate or substitute for one another rather than resolve into a single visual instruction.",
+              caption: "Animal-navigation comparison: different combinations of sensory cues suggested alternatives to a single visual route. The diagram informed speculative human experiences; it does not represent direct access to an animal’s experience.",
               fit: "contain"
             }
           ]
@@ -124,7 +124,7 @@ window.PROJECTS = [
       contributions: [
         {
           label: "Conceptual contribution",
-          copy: "The thesis proposes navigation as a distributed relation among bodies, memories, environmental signals, and technical systems—not a neutral instruction delivered by an interface."
+          copy: "The thesis questions efficiency as the dominant measure of navigation. Its experiments draw attention to how routes and interfaces select what matters, while sensory comparison opens up other ways of judging a journey."
         },
         {
           label: "Methodological contribution",
@@ -139,11 +139,11 @@ window.PROJECTS = [
       limitations: "This is an exploratory, practice-based thesis grounded in one recurring urban route and a small convenience sample. The animal studies inform speculative comparison rather than biological validation, and the artifacts were not evaluated as reliable navigation aids. The claims are therefore provisional: they identify a design space and a method for investigating it, not a generalizable replacement for GPS.",
       references: {
         project: "John Edward Huth, The Lost Art of Finding Our Way (2013); Tom McDonough, The Situationists and the City (2010); Denis Wood, Lynch Debord: About Two Psychogeographies (2010); Ellen Lupton and Andrea Lipps, The Senses: Design Beyond Vision (2018); Nathan F. Putman, Animal Navigation: What Is Truth? (2021); Kevin Slavin, Design as Participation (2016); Peter B. L. Meijer and Jamie Ward on sensory substitution and artificial synesthesia.",
-        method: "Methodological framing: Zimmerman, Forlizzi, and Evenson, Research through Design (2007); William Gaver, What Should We Expect from Research through Design? (2012); Ron Wakkary, Things We Could Design (2021)."
+        method: "Retrospective explanation of the practice-based method: Zimmerman, Forlizzi, and Evenson, Research through Design (2007); William Gaver, What Should We Expect from Research through Design? (2012). These references clarify how the work is presented here and are not claimed as starting points of the original thesis."
       }
     },
-    outcome: "The prototypes made normally backgrounded environmental cues tangible. Participants relied on bodily memory, negotiated uncertainty, and discussed how navigation technologies distribute agency rather than simply deliver directions.",
-    reflection: "The work argues that navigation is never neutral: every interface prioritizes particular worlds and ways of knowing. Design can expose those values and create room for human and non-human actors to be perceived differently.",
+    outcome: "Maps, sensor experiments, and four cross-modal prototypes explored navigation through bodily memory and environmental cues. Together they made alternatives to predefined visual instructions available for experience and discussion.",
+    reflection: "Looking back after completing the thesis, I found myself asking: why did considering another species’ sensory perspective change how I judged navigation technology? This question grew out of the design experiments. It became a starting point for later research interests, rather than a theoretical position established at the outset of this project.",
     cover: "assets/projects/navigation/chang-su-beeline-cover.jpg",
     coverFit: "contain",
     theme: "acid",
@@ -377,16 +377,16 @@ window.PROJECTS = [
           {
             src: "assets/projects/eating-future/process/tableware-fabrication.jpg",
             alt: "Complete sequence from design sketch and candle test to 3D printing and finished mold",
-            label: "04 / PROTOTYPING",
+            label: "04 / PROTOTYPE",
             caption: "Sketches moved into 3D-printed molds and flame tests, checking proportion, placement and use at the table.",
             layout: "process-strip",
             wide: true
           },
           {
             sources: [
+              { src: "assets/projects/eating-future/process/disseminating-machine-candle.jpg", alt: "Close-up of the lit tofu-shaped candle, showing its layered material and flame" },
               { src: "assets/projects/eating-future/process/machine-candle-tableware.jpg", alt: "Lit tofu-shaped candle placed in the tableware prototype" },
-              { src: "assets/projects/eating-future/process/machine-candle-full.jpg", alt: "Full view of the lit tofu-shaped candle" },
-              { src: "assets/projects/eating-future/process/disseminating-machine-candle.jpg", alt: "Close-up of the tofu-shaped candle flame" }
+              { src: "assets/projects/eating-future/process/machine-candle-full.jpg", alt: "Full view of the lit tofu-shaped candle" }
             ],
             label: "05 / DISSEMINATING MACHINE",
             caption: "The final tofu-shaped candle returns discarded okara to the table as scent, making an invisible loss in industrial food production perceptible.",
@@ -410,8 +410,8 @@ window.PROJECTS = [
               { src: "assets/projects/eating-future/process/theater-hibernation.jpg", alt: "The crew waking from hibernation aboard the Nostromo" },
               { src: "assets/projects/eating-future/process/theater-dining.jpg", alt: "The Nostromo crew sharing a meal" }
             ],
-            label: "01 / THE ALIEN UNIVERSE",
-            caption: "Aboard the Nostromo, the shared meal briefly restores ordinary human life. Food carries memory and a fragile connection to Earth.",
+            label: "01",
+            caption: "The Alien universe: aboard the Nostromo, the shared meal briefly restores ordinary human life. Food carries memory and a fragile connection to Earth.",
             wide: true
           },
           {
@@ -423,7 +423,7 @@ window.PROJECTS = [
               { src: "assets/projects/eating-future/process/theater-radial-concept.jpg", alt: "Radial tableware interaction concept with soybeans" },
               { src: "assets/projects/eating-future/process/theater-form-human.jpg", alt: "Developed mechanism sketch for the human interaction" },
               { src: "assets/projects/eating-future/process/theater-form-alien-robot.jpg", alt: "Developed interaction sketches for the alien and android" },
-              { src: "assets/projects/eating-future/process/theater-form-detail.jpg", alt: "Refined triangular food vessel sketch" }
+              { src: "assets/projects/eating-future/process/theater-form-detail-white-v1.png", alt: "Refined triangular food vessel pencil sketches on a clean white background" }
             ],
             fit: "contain",
             label: "02 / SKETCH DEVELOPMENT",
